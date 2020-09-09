@@ -1,0 +1,4942 @@
+{
+  "Translations": [],
+  "Categories": [],
+  "Id": "d610da39ad1840ac96d827fc974d8f81",
+  "Revision": 888,
+  "IsRoster": false,
+  "QuestionnaireId": {
+    "Id": "b598675c6cf34002bd984a076da1fdf6$2"
+  },
+  "DatabaseStructure": {},
+  "IsDeleted": false,
+  "RosterSizeQuestionId": null,
+  "RosterSizeSource": 0,
+  "IsFixedRoster": false,
+  "Parent": null,
+  "FixedRosterTitles": [],
+  "VariableName": "ACCOMMODATION_ATTRACTIONS_AC",
+  "Title": "Accommodations",
+  "RosterTitleQuestionId": null,
+  "PublicKey": "b598675c-6cf3-4002-bd98-4a076da1fdf6",
+  "Children": [
+    {
+      "IsRoster": false,
+      "RosterSizeQuestionId": null,
+      "RosterSizeSource": 0,
+      "IsFixedRoster": false,
+      "FixedRosterTitles": [],
+      "VariableName": "",
+      "Title": "Cover",
+      "RosterTitleQuestionId": null,
+      "PublicKey": "471f8d70-39a6-495d-bbb6-5bb451053f95",
+      "Children": [
+        {
+          "IsInteger": true,
+          "QuestionType": 4,
+          "Featured": true,
+          "VariableName": "estabNo",
+          "VariableLabel": "ESTABLISHMENT No",
+          "QuestionText": "ESTABLISHMENT No.",
+          "Answers": [],
+          "LinkedToQuestionId": null,
+          "LinkedToRosterId": null,
+          "PublicKey": "24aedfc6-5fbf-775f-f4bc-f27acdd44ad6",
+          "Children": [],
+          "ValidationConditions": [],
+          "Instructions": "",
+          "ColumnName": "estabno"
+        },
+        {
+          "QuestionType": 7,
+          "Featured": true,
+          "VariableName": "estabName",
+          "VariableLabel": "ESTABLISHMENT NAME",
+          "QuestionText": "ESTABLISHMENT NAME",
+          "Answers": [],
+          "LinkedToQuestionId": null,
+          "LinkedToRosterId": null,
+          "PublicKey": "d929b8c7-dc56-e664-37d1-0dfb82870a5c",
+          "Children": [],
+          "ValidationConditions": [],
+          "Instructions": "",
+          "ColumnName": "estabname"
+        },
+        {
+          "QuestionType": 7,
+          "Featured": true,
+          "VariableName": "int_name",
+          "VariableLabel": "Name of Interviewer",
+          "QuestionText": "Name of Interviewer:",
+          "Answers": [],
+          "LinkedToQuestionId": null,
+          "LinkedToRosterId": null,
+          "PublicKey": "65672d0d-d940-140f-adf0-74e6a5527c5c",
+          "Children": [],
+          "ValidationConditions": [],
+          "Instructions": "",
+          "ColumnName": "int_name"
+        }
+      ],
+      "HasAnyExportableChild": true,
+      "TableName": "XGeYtfNsAkC9mEoHbaH99g$2",
+      "EnablementTableName": "XGeYtfNsAkC9mEoHbaH99g$2-e",
+      "ValidityTableName": "XGeYtfNsAkC9mEoHbaH99g$2-v",
+      "DoesSupportDataTable": true,
+      "DoesSupportEnablementTable": true,
+      "DoesSupportValidityTable": true,
+      "IsInsideRoster": false,
+      "ColumnName": "471f8d70-39a6-495d-bbb6-5bb451053f95"
+    },
+    {
+      "IsRoster": false,
+      "RosterSizeQuestionId": null,
+      "RosterSizeSource": 0,
+      "IsFixedRoster": false,
+      "FixedRosterTitles": [],
+      "VariableName": "",
+      "Title": "VISIT INFORMATION",
+      "RosterTitleQuestionId": null,
+      "PublicKey": "93b19e91-8487-1d55-cca8-29ccdc1b51f0",
+      "Children": [
+        {
+          "PublicKey": "34ada916-428d-b8e5-07cb-187868f4a691",
+          "Children": [],
+          "ValidationConditions": [],
+          "ColumnName": "34ada916-428d-b8e5-07cb-187868f4a691"
+        },
+        {
+          "IsInteger": true,
+          "QuestionType": 4,
+          "Featured": false,
+          "VariableName": "visit_number",
+          "VariableLabel": "Number of Visits",
+          "QuestionText": "Times Visited:",
+          "Answers": [
+            {
+              "AnswerText": "First visit",
+              "AnswerValue": "1"
+            },
+            {
+              "AnswerText": "Second visit",
+              "AnswerValue": "2"
+            },
+            {
+              "AnswerText": "Third visit",
+              "AnswerValue": "3"
+            }
+          ],
+          "LinkedToQuestionId": null,
+          "LinkedToRosterId": null,
+          "PublicKey": "33572ed7-9d38-1604-7256-ff1593ee9419",
+          "Children": [],
+          "ValidationConditions": [],
+          "Instructions": "For every visit attempt select a higher value then earlier. Do not revise the number of visits to a smaller value! You will not be able to re-enter the earlier captured timestamp of the visit!",
+          "ColumnName": "visit_number"
+        },
+        {
+          "IsRoster": true,
+          "RosterSizeQuestionId": null,
+          "RosterSizeSource": 1,
+          "IsFixedRoster": true,
+          "FixedRosterTitles": [
+            {
+              "Value": 1.0,
+              "Title": "#1"
+            },
+            {
+              "Value": 2.0,
+              "Title": "#2"
+            },
+            {
+              "Value": 3.0,
+              "Title": "#3"
+            }
+          ],
+          "VariableName": "roster_visit",
+          "Title": "%visitTitle% - VISIT",
+          "RosterTitleQuestionId": null,
+          "PublicKey": "b383a358-387b-4484-0e5f-dfed7f72c488",
+          "Children": [
+            {
+              "QuestionType": 6,
+              "Featured": false,
+              "VariableName": "estab_GPS",
+              "VariableLabel": "",
+              "QuestionText": "INTERVIEWER: You must visit <font color=\"#009900\">%estabName%</font>. Upon arrival, capture the GPS location.",
+              "Answers": [],
+              "LinkedToQuestionId": null,
+              "LinkedToRosterId": null,
+              "PublicKey": "1d266ebd-6be8-4800-a23c-e8bf890fa127",
+              "Children": [],
+              "ValidationConditions": [],
+              "Instructions": "General rules:\n1. GPS can not be taken inside a building. \n2. When you turn the GPS/location mode on wait at least 1 minute before trying to take a location. You will get a validation error if the accuracy is not better than 20m. Stand on the same spot and press the GPS button again.\n3. Stand at least 20m away from the wall of a building\n4. Make sure you can see the sky\n5. Don't stand under a tree unless there is no other option\n\nYou will need to try at least a few times to capture the points.",
+              "ColumnName": "estab_gps"
+            },
+            {
+              "IsTimestamp": true,
+              "QuestionType": 5,
+              "Featured": false,
+              "VariableName": "visitTimestamp",
+              "VariableLabel": "Visit Start Time",
+              "QuestionText": "INTERVIEWER: Record the date and time of the visit!",
+              "Answers": [],
+              "LinkedToQuestionId": null,
+              "LinkedToRosterId": null,
+              "PublicKey": "18587089-3a96-449a-be4c-a0ee14842ff7",
+              "Children": [],
+              "ValidationConditions": [
+                {
+                  "Expression": "(@rowcode==roster_visit.Min(x=>x.@rowcode)) || (self>roster_visit[@rowcode-1].visitTimestamp)",
+                  "Message": "Error! The every visit's timestamp must be later than the timestamp of the previous visit!",
+                  "Severity": 1
+                }
+              ],
+              "Instructions": "Click on the Button",
+              "ColumnName": "visittimestamp"
+            },
+            {
+              "PublicKey": "5961ef71-75c3-4a5f-83c0-5027cb755a15",
+              "Children": [],
+              "Type": 5,
+              "Name": "visitTitle",
+              "Label": "Calculated visit title to be displayed on the button.",
+              "Expression": "IsAnswered(visitTimestamp) ? visitTimestamp.ToString() : \" \"",
+              "DoNotExport": false,
+              "ColumnName": "visittitle",
+              "IsExportable": true
+            },
+            {
+              "PublicKey": "498de684-087b-4ba1-9edd-0b37609759ac",
+              "Children": [],
+              "Type": 1,
+              "Name": "c_year",
+              "Label": "Extract year from visit",
+              "Expression": "visitTimestamp.Value.Year",
+              "DoNotExport": false,
+              "ColumnName": "c_year",
+              "IsExportable": true
+            }
+          ],
+          "HasAnyExportableChild": true,
+          "TableName": "XGeYtfNsAkC9mEoHbaH99g$2_roster_visit",
+          "EnablementTableName": "XGeYtfNsAkC9mEoHbaH99g$2_roster_visit-e",
+          "ValidityTableName": "XGeYtfNsAkC9mEoHbaH99g$2_roster_visit-v",
+          "DoesSupportDataTable": true,
+          "DoesSupportEnablementTable": true,
+          "DoesSupportValidityTable": true,
+          "IsInsideRoster": true,
+          "ColumnName": "roster_visit"
+        },
+        {
+          "PublicKey": "372eb2bc-e878-2ad1-838a-c7d563d56008",
+          "Children": [],
+          "Type": 3,
+          "Name": "surveyStarted",
+          "Label": "Calculated status to enable other sections of the questionnaire.",
+          "Expression": "roster_visit.Count(x => x.visitTimestamp!=null)>0",
+          "DoNotExport": false,
+          "ColumnName": "surveystarted",
+          "IsExportable": true
+        },
+        {
+          "PublicKey": "5e5c1fb2-babd-aebc-ec26-84bc0b46dea0",
+          "Children": [],
+          "ValidationConditions": [],
+          "ColumnName": "5e5c1fb2-babd-aebc-ec26-84bc0b46dea0"
+        },
+        {
+          "CategoriesId": null,
+          "QuestionType": 0,
+          "Featured": false,
+          "VariableName": "startQ",
+          "VariableLabel": "",
+          "QuestionText": "MAY I START NOW?",
+          "Answers": [
+            {
+              "AnswerText": "Permission is given (Start Interview)",
+              "AnswerValue": "1"
+            },
+            {
+              "AnswerText": "Permission is not given  (Thank respondent and Fill in Completion Status)",
+              "AnswerValue": "2"
+            }
+          ],
+          "LinkedToQuestionId": null,
+          "LinkedToRosterId": null,
+          "PublicKey": "92e4d175-cf61-658e-fcd4-f2f626dd72e9",
+          "Children": [],
+          "ValidationConditions": [],
+          "Instructions": "",
+          "ColumnName": "startq"
+        }
+      ],
+      "HasAnyExportableChild": true,
+      "TableName": "XGeYtfNsAkC9mEoHbaH99g$2",
+      "EnablementTableName": "XGeYtfNsAkC9mEoHbaH99g$2-e",
+      "ValidityTableName": "XGeYtfNsAkC9mEoHbaH99g$2-v",
+      "DoesSupportDataTable": true,
+      "DoesSupportEnablementTable": true,
+      "DoesSupportValidityTable": true,
+      "IsInsideRoster": false,
+      "ColumnName": "93b19e91-8487-1d55-cca8-29ccdc1b51f0"
+    },
+    {
+      "IsRoster": false,
+      "RosterSizeQuestionId": null,
+      "RosterSizeSource": 0,
+      "IsFixedRoster": false,
+      "FixedRosterTitles": [],
+      "VariableName": "gCharacteristics",
+      "Title": "GENERAL CHARACTERISTICS",
+      "RosterTitleQuestionId": null,
+      "PublicKey": "d5ded56b-d467-48db-9d07-7bef336ad06f",
+      "Children": [
+        {
+          "PublicKey": "caad4d65-3671-8ea6-c8ef-1dd204bde9d5",
+          "Children": [],
+          "ValidationConditions": [],
+          "ColumnName": "caad4d65-3671-8ea6-c8ef-1dd204bde9d5"
+        },
+        {
+          "CategoriesId": null,
+          "QuestionType": 0,
+          "Featured": false,
+          "VariableName": "bt1",
+          "VariableLabel": "",
+          "QuestionText": "BT1. What is the main business activity of this facility? (the activity  with the greatest number of employees)",
+          "Answers": [
+            {
+              "AnswerText": "1. Hotels and Resorts",
+              "AnswerValue": "1"
+            },
+            {
+              "AnswerText": "2. Attractions and Activities",
+              "AnswerValue": "2"
+            }
+          ],
+          "LinkedToQuestionId": null,
+          "LinkedToRosterId": null,
+          "PublicKey": "98b6e7eb-4b43-7d33-9a00-4ef1e4aced33",
+          "Children": [],
+          "ValidationConditions": [],
+          "Instructions": "",
+          "ColumnName": "bt1"
+        },
+        {
+          "IsRoster": false,
+          "RosterSizeQuestionId": null,
+          "RosterSizeSource": 0,
+          "IsFixedRoster": false,
+          "FixedRosterTitles": [],
+          "VariableName": "accommodationSec",
+          "Title": "SECTION 1 - ACCOMMODATION (HOTELS)",
+          "RosterTitleQuestionId": null,
+          "PublicKey": "058dda53-1dee-31ca-54fb-f04338a457fe",
+          "Children": [
+            {
+              "PublicKey": "5bc49aa2-eee1-3019-47a2-075dd9dad87d",
+              "Children": [],
+              "ValidationConditions": [],
+              "ColumnName": "5bc49aa2-eee1-3019-47a2-075dd9dad87d"
+            },
+            {
+              "CategoriesId": null,
+              "QuestionType": 0,
+              "Featured": false,
+              "VariableName": "q1_01",
+              "VariableLabel": "",
+              "QuestionText": "1.01. Which of the following best describes your lodging facilities?",
+              "Answers": [
+                {
+                  "AnswerText": "Hotels & Resorts",
+                  "AnswerValue": "1"
+                },
+                {
+                  "AnswerText": "Guest House",
+                  "AnswerValue": "2"
+                },
+                {
+                  "AnswerText": "Villa",
+                  "AnswerValue": "3"
+                },
+                {
+                  "AnswerText": "Campground/Campsite",
+                  "AnswerValue": "4"
+                },
+                {
+                  "AnswerText": "Bed & Breakfast/Inn",
+                  "AnswerValue": "5"
+                },
+                {
+                  "AnswerText": "Air Bnb",
+                  "AnswerValue": "6"
+                },
+                {
+                  "AnswerText": "Hostel",
+                  "AnswerValue": "7"
+                },
+                {
+                  "AnswerText": "Other (specify)",
+                  "AnswerValue": "8"
+                }
+              ],
+              "LinkedToQuestionId": null,
+              "LinkedToRosterId": null,
+              "PublicKey": "d349479b-be2c-487b-b404-19735e6f4fd6",
+              "Children": [],
+              "ValidationConditions": [],
+              "Instructions": "",
+              "ColumnName": "q1_01"
+            },
+            {
+              "QuestionType": 7,
+              "Featured": false,
+              "VariableName": "q1_01S",
+              "VariableLabel": "",
+              "QuestionText": "1.01. Please specify other",
+              "Answers": [],
+              "LinkedToQuestionId": null,
+              "LinkedToRosterId": null,
+              "PublicKey": "9e546702-61a8-4ace-b475-5ea11f9cc6aa",
+              "Children": [],
+              "ValidationConditions": [],
+              "Instructions": "",
+              "ColumnName": "q1_01s"
+            },
+            {
+              "CategoriesId": null,
+              "QuestionType": 0,
+              "Featured": false,
+              "VariableName": "q1_02",
+              "VariableLabel": "",
+              "QuestionText": "1.02. What is your position in this business?",
+              "Answers": [
+                {
+                  "AnswerText": "1. Owner",
+                  "AnswerValue": "1"
+                },
+                {
+                  "AnswerText": "2. Manager/operator",
+                  "AnswerValue": "2"
+                },
+                {
+                  "AnswerText": "3. Senior Supervisor",
+                  "AnswerValue": "3"
+                },
+                {
+                  "AnswerText": "4. Other Senior Position (Specify)",
+                  "AnswerValue": "4"
+                }
+              ],
+              "LinkedToQuestionId": null,
+              "LinkedToRosterId": null,
+              "PublicKey": "35bf7f7e-5faf-6315-3903-cfe39212a308",
+              "Children": [],
+              "ValidationConditions": [],
+              "Instructions": "",
+              "ColumnName": "q1_02"
+            },
+            {
+              "QuestionType": 7,
+              "Featured": false,
+              "VariableName": "q1_02S",
+              "VariableLabel": "",
+              "QuestionText": "1.02S. Please specify other senior position",
+              "Answers": [],
+              "LinkedToQuestionId": null,
+              "LinkedToRosterId": null,
+              "PublicKey": "0f2f5877-f20b-8d0e-11df-00cffc754cee",
+              "Children": [],
+              "ValidationConditions": [],
+              "Instructions": "",
+              "ColumnName": "q1_02s"
+            },
+            {
+              "CategoriesId": null,
+              "QuestionType": 0,
+              "Featured": false,
+              "VariableName": "q1_02a",
+              "VariableLabel": "",
+              "QuestionText": "1.02a. What is the ownership structure of the business?",
+              "Answers": [
+                {
+                  "AnswerText": "1. Sole Proprietorship",
+                  "AnswerValue": "1"
+                },
+                {
+                  "AnswerText": "2. Partnership",
+                  "AnswerValue": "2"
+                },
+                {
+                  "AnswerText": "3. Limited liability Company",
+                  "AnswerValue": "3"
+                },
+                {
+                  "AnswerText": "4. Corporations",
+                  "AnswerValue": "4"
+                },
+                {
+                  "AnswerText": "5. Joint venture (Ja./Int.)",
+                  "AnswerValue": "5"
+                },
+                {
+                  "AnswerText": "6. Other (Specify)",
+                  "AnswerValue": "6"
+                }
+              ],
+              "LinkedToQuestionId": null,
+              "LinkedToRosterId": null,
+              "PublicKey": "6c1fdae2-eb85-d975-e8c6-957b66e7672d",
+              "Children": [],
+              "ValidationConditions": [],
+              "Instructions": "",
+              "ColumnName": "q1_02a"
+            },
+            {
+              "QuestionType": 7,
+              "Featured": false,
+              "VariableName": "q1_02aS",
+              "VariableLabel": "",
+              "QuestionText": "1.02a. Please specify other of ownership structure.",
+              "Answers": [],
+              "LinkedToQuestionId": null,
+              "LinkedToRosterId": null,
+              "PublicKey": "de14c181-b0aa-81d3-7377-478109343603",
+              "Children": [],
+              "ValidationConditions": [],
+              "Instructions": "",
+              "ColumnName": "q1_02as"
+            },
+            {
+              "CategoriesId": null,
+              "QuestionType": 0,
+              "Featured": false,
+              "VariableName": "q1_03",
+              "VariableLabel": "",
+              "QuestionText": "1.03. Do you operate or own a similar facility in another location in Jamaica?",
+              "Answers": [
+                {
+                  "AnswerText": "Yes",
+                  "AnswerValue": "1"
+                },
+                {
+                  "AnswerText": "No",
+                  "AnswerValue": "2"
+                }
+              ],
+              "LinkedToQuestionId": null,
+              "LinkedToRosterId": null,
+              "PublicKey": "b3454d8e-eb31-e699-3dc4-7542851bc96a",
+              "Children": [],
+              "ValidationConditions": [],
+              "Instructions": "",
+              "ColumnName": "q1_03"
+            },
+            {
+              "CategoriesId": null,
+              "QuestionType": 0,
+              "Featured": false,
+              "VariableName": "q1_04",
+              "VariableLabel": "",
+              "QuestionText": "1.04. Where is this other facility located in Jamaica?",
+              "Answers": [
+                {
+                  "AnswerText": "1. Elsewhere in Negril",
+                  "AnswerValue": "1"
+                },
+                {
+                  "AnswerText": "2. In another location in Westmoreland",
+                  "AnswerValue": "2"
+                },
+                {
+                  "AnswerText": "3. In another Parish",
+                  "AnswerValue": "3"
+                }
+              ],
+              "LinkedToQuestionId": null,
+              "LinkedToRosterId": null,
+              "PublicKey": "c953fd1e-f630-8cad-f264-7a6f6532e14b",
+              "Children": [],
+              "ValidationConditions": [],
+              "Instructions": "",
+              "ColumnName": "q1_04"
+            },
+            {
+              "CategoriesId": null,
+              "QuestionType": 0,
+              "Featured": false,
+              "VariableName": "q1_04a",
+              "VariableLabel": "",
+              "QuestionText": "1.04a. If the other facility is located in another parish, what parish is this?",
+              "Answers": [
+                {
+                  "AnswerText": "1. Kingston",
+                  "AnswerValue": "1"
+                },
+                {
+                  "AnswerText": "2. St. Andrew",
+                  "AnswerValue": "2"
+                },
+                {
+                  "AnswerText": "3. Thomas",
+                  "AnswerValue": "3"
+                },
+                {
+                  "AnswerText": "4. Portland",
+                  "AnswerValue": "4"
+                },
+                {
+                  "AnswerText": "5. St. Mary",
+                  "AnswerValue": "5"
+                },
+                {
+                  "AnswerText": "6. St. Ann",
+                  "AnswerValue": "6"
+                },
+                {
+                  "AnswerText": "7. Trelawny",
+                  "AnswerValue": "7"
+                },
+                {
+                  "AnswerText": "8. St. James",
+                  "AnswerValue": "8"
+                },
+                {
+                  "AnswerText": "9. Hanover",
+                  "AnswerValue": "9"
+                },
+                {
+                  "AnswerText": "10. St. Elizabeth",
+                  "AnswerValue": "10"
+                },
+                {
+                  "AnswerText": "11. Manchester",
+                  "AnswerValue": "11"
+                },
+                {
+                  "AnswerText": "12. Clarendon",
+                  "AnswerValue": "12"
+                },
+                {
+                  "AnswerText": "13. St. Catherine",
+                  "AnswerValue": "13"
+                }
+              ],
+              "LinkedToQuestionId": null,
+              "LinkedToRosterId": null,
+              "PublicKey": "056944e4-f3d1-593d-4cac-2277fcdf6a20",
+              "Children": [],
+              "ValidationConditions": [],
+              "Instructions": "",
+              "ColumnName": "q1_04a"
+            },
+            {
+              "CategoriesId": null,
+              "QuestionType": 0,
+              "Featured": false,
+              "VariableName": "q1_05",
+              "VariableLabel": "",
+              "QuestionText": "1.05. How long has this facility been in operation from this location?",
+              "Answers": [
+                {
+                  "AnswerText": "Less than 1 year",
+                  "AnswerValue": "1"
+                },
+                {
+                  "AnswerText": "1 to 3 years",
+                  "AnswerValue": "2"
+                },
+                {
+                  "AnswerText": "4 to 6 years",
+                  "AnswerValue": "3"
+                },
+                {
+                  "AnswerText": "7 - 10 years",
+                  "AnswerValue": "4"
+                },
+                {
+                  "AnswerText": "10 years and over",
+                  "AnswerValue": "5"
+                }
+              ],
+              "LinkedToQuestionId": null,
+              "LinkedToRosterId": null,
+              "PublicKey": "66343507-d93f-dee4-8935-2591e0072fe2",
+              "Children": [],
+              "ValidationConditions": [],
+              "Instructions": "",
+              "ColumnName": "q1_05"
+            },
+            {
+              "CategoriesId": null,
+              "QuestionType": 0,
+              "Featured": false,
+              "VariableName": "q1_06",
+              "VariableLabel": "",
+              "QuestionText": "1.06.  Who is your main customer at this location?",
+              "Answers": [
+                {
+                  "AnswerText": "1. Local residents",
+                  "AnswerValue": "1"
+                },
+                {
+                  "AnswerText": "2. Foreign Tourists",
+                  "AnswerValue": "2"
+                },
+                {
+                  "AnswerText": "3. Jamaicans living overseas",
+                  "AnswerValue": "3"
+                },
+                {
+                  "AnswerText": "4. Other (specify)",
+                  "AnswerValue": "4"
+                }
+              ],
+              "LinkedToQuestionId": null,
+              "LinkedToRosterId": null,
+              "PublicKey": "694e5e97-55cf-67c6-6486-102a0a62b751",
+              "Children": [],
+              "ValidationConditions": [],
+              "Instructions": "",
+              "ColumnName": "q1_06"
+            },
+            {
+              "QuestionType": 7,
+              "Featured": false,
+              "VariableName": "q1_6S",
+              "VariableLabel": "",
+              "QuestionText": "1.06S. Please specify other.",
+              "Answers": [],
+              "LinkedToQuestionId": null,
+              "LinkedToRosterId": null,
+              "PublicKey": "ffe0408e-497a-63e1-0665-4fb891143293",
+              "Children": [],
+              "ValidationConditions": [],
+              "Instructions": "",
+              "ColumnName": "q1_6s"
+            },
+            {
+              "PublicKey": "1da79688-55ac-127a-08e2-3c2c86d109c9",
+              "Children": [],
+              "ValidationConditions": [],
+              "ColumnName": "1da79688-55ac-127a-08e2-3c2c86d109c9"
+            },
+            {
+              "QuestionType": 7,
+              "Featured": false,
+              "VariableName": "q1_07a",
+              "VariableLabel": "",
+              "QuestionText": "Country #1:",
+              "Answers": [],
+              "LinkedToQuestionId": null,
+              "LinkedToRosterId": null,
+              "PublicKey": "46fa7b20-74d1-5234-045d-d584e769630b",
+              "Children": [],
+              "ValidationConditions": [],
+              "Instructions": "",
+              "ColumnName": "q1_07a"
+            },
+            {
+              "QuestionType": 7,
+              "Featured": false,
+              "VariableName": "q1_07b",
+              "VariableLabel": "",
+              "QuestionText": "Country #2:",
+              "Answers": [],
+              "LinkedToQuestionId": null,
+              "LinkedToRosterId": null,
+              "PublicKey": "fa857f26-0233-493c-b175-647697c407fe",
+              "Children": [],
+              "ValidationConditions": [],
+              "Instructions": "",
+              "ColumnName": "q1_07b"
+            },
+            {
+              "QuestionType": 7,
+              "Featured": false,
+              "VariableName": "q1_07c",
+              "VariableLabel": "",
+              "QuestionText": "Country #3:",
+              "Answers": [],
+              "LinkedToQuestionId": null,
+              "LinkedToRosterId": null,
+              "PublicKey": "b081ef4f-3bfb-69af-81d3-59998c435057",
+              "Children": [],
+              "ValidationConditions": [],
+              "Instructions": "",
+              "ColumnName": "q1_07c"
+            },
+            {
+              "CategoriesId": null,
+              "QuestionType": 0,
+              "Featured": false,
+              "VariableName": "q1_08",
+              "VariableLabel": "",
+              "QuestionText": "1.08. Does the facility cater for children?",
+              "Answers": [
+                {
+                  "AnswerText": "1. No",
+                  "AnswerValue": "1"
+                },
+                {
+                  "AnswerText": "2. Yes, all ages",
+                  "AnswerValue": "2"
+                },
+                {
+                  "AnswerText": "3. Yes, children under 4 years",
+                  "AnswerValue": "3"
+                },
+                {
+                  "AnswerText": "4. Yes, children over 4 years",
+                  "AnswerValue": "4"
+                }
+              ],
+              "LinkedToQuestionId": null,
+              "LinkedToRosterId": null,
+              "PublicKey": "77302a02-1a36-e0ba-9d4c-b00a04e20cba",
+              "Children": [],
+              "ValidationConditions": [],
+              "Instructions": "",
+              "ColumnName": "q1_08"
+            },
+            {
+              "CategoriesId": null,
+              "QuestionType": 0,
+              "Featured": false,
+              "VariableName": "q1_09",
+              "VariableLabel": "",
+              "QuestionText": "1.09. Please tell me all the amenities/services  that are provided by this facility?",
+              "Answers": [
+                {
+                  "AnswerText": "1. Restaurant",
+                  "AnswerValue": "1"
+                },
+                {
+                  "AnswerText": "2. Swimming Facilities/Pool",
+                  "AnswerValue": "2"
+                },
+                {
+                  "AnswerText": "3. Porter Service",
+                  "AnswerValue": "3"
+                },
+                {
+                  "AnswerText": "4. 24 Hour reception",
+                  "AnswerValue": "4"
+                },
+                {
+                  "AnswerText": "5. Laundry",
+                  "AnswerValue": "5"
+                },
+                {
+                  "AnswerText": "6. Internet /Wi-Fi",
+                  "AnswerValue": "6"
+                },
+                {
+                  "AnswerText": "7. On line reservation",
+                  "AnswerValue": "7"
+                },
+                {
+                  "AnswerText": "8. Electronic Payment",
+                  "AnswerValue": "8"
+                },
+                {
+                  "AnswerText": "9. Foreign Exchange Counter",
+                  "AnswerValue": "9"
+                },
+                {
+                  "AnswerText": "10. Daily Housekeeping",
+                  "AnswerValue": "10"
+                },
+                {
+                  "AnswerText": "11. Transportation Service",
+                  "AnswerValue": "11"
+                },
+                {
+                  "AnswerText": "12. Souvenir Shop",
+                  "AnswerValue": "12"
+                },
+                {
+                  "AnswerText": "13. Parking spaces",
+                  "AnswerValue": "13"
+                },
+                {
+                  "AnswerText": "14. Telephone Service",
+                  "AnswerValue": "14"
+                },
+                {
+                  "AnswerText": "15. Other (Specify)",
+                  "AnswerValue": "15"
+                }
+              ],
+              "LinkedToQuestionId": null,
+              "LinkedToRosterId": null,
+              "PublicKey": "3d95ea5a-1084-3cce-c56b-68e4bb9569bf",
+              "Children": [],
+              "ValidationConditions": [],
+              "Instructions": "",
+              "ColumnName": "q1_09"
+            },
+            {
+              "QuestionType": 7,
+              "Featured": false,
+              "VariableName": "q1_09S",
+              "VariableLabel": "",
+              "QuestionText": "1.09S. Please specify other.",
+              "Answers": [],
+              "LinkedToQuestionId": null,
+              "LinkedToRosterId": null,
+              "PublicKey": "d4ea6c78-080e-e738-b699-774c80be9ca8",
+              "Children": [],
+              "ValidationConditions": [],
+              "Instructions": "",
+              "ColumnName": "q1_09s"
+            },
+            {
+              "CategoriesId": null,
+              "QuestionType": 0,
+              "Featured": false,
+              "VariableName": "q1_10",
+              "VariableLabel": "",
+              "QuestionText": "1.10. What is the main meal plan provided by this facility?",
+              "Answers": [
+                {
+                  "AnswerText": "1. All-Inclusive",
+                  "AnswerValue": "1"
+                },
+                {
+                  "AnswerText": "2. Breakfast Service",
+                  "AnswerValue": "2"
+                },
+                {
+                  "AnswerText": "3. Other (Specify)",
+                  "AnswerValue": "3"
+                },
+                {
+                  "AnswerText": "4. Has no meal plan",
+                  "AnswerValue": "4"
+                }
+              ],
+              "LinkedToQuestionId": null,
+              "LinkedToRosterId": null,
+              "PublicKey": "adb7a33e-29cb-6e05-0fb7-14dddc65d103",
+              "Children": [],
+              "ValidationConditions": [],
+              "Instructions": "",
+              "ColumnName": "q1_10"
+            },
+            {
+              "QuestionType": 7,
+              "Featured": false,
+              "VariableName": "q1_10S",
+              "VariableLabel": "",
+              "QuestionText": "1.10S. Please specify other.",
+              "Answers": [],
+              "LinkedToQuestionId": null,
+              "LinkedToRosterId": null,
+              "PublicKey": "7f507e6e-2180-daa6-393e-bf95c3d286db",
+              "Children": [],
+              "ValidationConditions": [],
+              "Instructions": "",
+              "ColumnName": "q1_10s"
+            },
+            {
+              "IsInteger": true,
+              "QuestionType": 4,
+              "Featured": false,
+              "VariableName": "q1_11",
+              "VariableLabel": "",
+              "QuestionText": "1.11. How many rooms does this facility operate?",
+              "Answers": [],
+              "LinkedToQuestionId": null,
+              "LinkedToRosterId": null,
+              "PublicKey": "2001ba15-fcd6-6c6e-bf8a-a9738be9c7a6",
+              "Children": [],
+              "ValidationConditions": [],
+              "Instructions": "",
+              "ColumnName": "q1_11"
+            },
+            {
+              "IsInteger": true,
+              "QuestionType": 4,
+              "Featured": false,
+              "VariableName": "q1_12",
+              "VariableLabel": "",
+              "QuestionText": "1.12. What is the average price of a room per night? (US$)",
+              "Answers": [],
+              "LinkedToQuestionId": null,
+              "LinkedToRosterId": null,
+              "PublicKey": "8ddf91f4-e2ad-fbd1-73d4-b94d4a5e6fb7",
+              "Children": [],
+              "ValidationConditions": [],
+              "Instructions": "",
+              "ColumnName": "q1_12"
+            },
+            {
+              "QuestionType": 7,
+              "Featured": false,
+              "VariableName": "q1_13",
+              "VariableLabel": "",
+              "QuestionText": "1.13. For the past year, what was the average number of nights your guests stayed?",
+              "Answers": [],
+              "LinkedToQuestionId": null,
+              "LinkedToRosterId": null,
+              "PublicKey": "58285639-16d7-3069-0307-fda47408da10",
+              "Children": [],
+              "ValidationConditions": [],
+              "Instructions": "Nights",
+              "ColumnName": "q1_13"
+            },
+            {
+              "CategoriesId": null,
+              "QuestionType": 0,
+              "Featured": false,
+              "VariableName": "q1_14",
+              "VariableLabel": "",
+              "QuestionText": "1.14. Does this facility have one or more rooms for persons with reduced mobility including wheelchair users?",
+              "Answers": [
+                {
+                  "AnswerText": "Yes",
+                  "AnswerValue": "1"
+                },
+                {
+                  "AnswerText": "No",
+                  "AnswerValue": "2"
+                }
+              ],
+              "LinkedToQuestionId": null,
+              "LinkedToRosterId": null,
+              "PublicKey": "3a6be781-2887-1028-c641-4bccae58975e",
+              "Children": [],
+              "ValidationConditions": [],
+              "Instructions": "",
+              "ColumnName": "q1_14"
+            },
+            {
+              "YesNoView": false,
+              "AreAnswersOrdered": false,
+              "IsFilteredCombobox": false,
+              "CategoriesId": null,
+              "MaxAllowedAnswers": null,
+              "QuestionType": 3,
+              "Featured": false,
+              "VariableName": "q1_15",
+              "VariableLabel": "",
+              "QuestionText": "1.15 For persons who are travelling for leisure or vacation what do you think are the main reasons for visiting this facility?",
+              "Answers": [
+                {
+                  "AnswerText": "1. Culture",
+                  "AnswerValue": "1"
+                },
+                {
+                  "AnswerText": "2. Historic Attractions",
+                  "AnswerValue": "2"
+                },
+                {
+                  "AnswerText": "3. Adventure Travel",
+                  "AnswerValue": "3"
+                },
+                {
+                  "AnswerText": "4. Nature/Wildlife",
+                  "AnswerValue": "4"
+                },
+                {
+                  "AnswerText": "5. Business",
+                  "AnswerValue": "5"
+                },
+                {
+                  "AnswerText": "6. Visit Relatives",
+                  "AnswerValue": "6"
+                },
+                {
+                  "AnswerText": "7. Church/Outreach activities",
+                  "AnswerValue": "7"
+                },
+                {
+                  "AnswerText": "8. Other (Specify)",
+                  "AnswerValue": "8"
+                }
+              ],
+              "LinkedToQuestionId": null,
+              "LinkedToRosterId": null,
+              "PublicKey": "02bdcd66-9a56-719a-b812-0dc8d462b1b7",
+              "Children": [],
+              "ValidationConditions": [],
+              "Instructions": "Record all that apply",
+              "ColumnName": "q1_15"
+            },
+            {
+              "QuestionType": 7,
+              "Featured": false,
+              "VariableName": "q1_15S",
+              "VariableLabel": "",
+              "QuestionText": "1.15S. Please specify other.",
+              "Answers": [],
+              "LinkedToQuestionId": null,
+              "LinkedToRosterId": null,
+              "PublicKey": "d9fb9693-cc75-5bb1-2dfd-2926a6f0e819",
+              "Children": [],
+              "ValidationConditions": [],
+              "Instructions": "",
+              "ColumnName": "q1_15s"
+            },
+            {
+              "PublicKey": "ac382361-cf51-f195-734e-cee82efb1c3a",
+              "Children": [],
+              "Type": 1,
+              "Name": "unanswered_accommodationSec",
+              "Label": "",
+              "Expression": "NumberUnansweredQuestions(accommodationSec)",
+              "DoNotExport": true,
+              "ColumnName": "unanswered_accommodationsec",
+              "IsExportable": false
+            },
+            {
+              "PublicKey": "84b65963-9302-208a-67a0-2995c7acee58",
+              "Children": [],
+              "ValidationConditions": [],
+              "ColumnName": "84b65963-9302-208a-67a0-2995c7acee58"
+            }
+          ],
+          "HasAnyExportableChild": true,
+          "TableName": "XGeYtfNsAkC9mEoHbaH99g$2",
+          "EnablementTableName": "XGeYtfNsAkC9mEoHbaH99g$2-e",
+          "ValidityTableName": "XGeYtfNsAkC9mEoHbaH99g$2-v",
+          "DoesSupportDataTable": true,
+          "DoesSupportEnablementTable": true,
+          "DoesSupportValidityTable": true,
+          "IsInsideRoster": false,
+          "ColumnName": "accommodationsec"
+        },
+        {
+          "IsRoster": false,
+          "RosterSizeQuestionId": null,
+          "RosterSizeSource": 0,
+          "IsFixedRoster": false,
+          "FixedRosterTitles": [],
+          "VariableName": "attractionSec",
+          "Title": "SECTION 2 - ATTRACTIONS AND EVENTS",
+          "RosterTitleQuestionId": null,
+          "PublicKey": "62f4c182-5216-a7a7-d079-3d268d39becf",
+          "Children": [
+            {
+              "CategoriesId": null,
+              "QuestionType": 0,
+              "Featured": false,
+              "VariableName": "q2_01",
+              "VariableLabel": "",
+              "QuestionText": "2.01. Which of the following best describes your main attraction ?",
+              "Answers": [
+                {
+                  "AnswerText": "1. Natural Attractions/Ecotourism/Nature/Wildlife",
+                  "AnswerValue": "1"
+                },
+                {
+                  "AnswerText": "2. Heritage/Culture attractions",
+                  "AnswerValue": "2"
+                },
+                {
+                  "AnswerText": "3. Purpose Built/Man-made",
+                  "AnswerValue": "3"
+                },
+                {
+                  "AnswerText": "4. Events as Attractions",
+                  "AnswerValue": "4"
+                },
+                {
+                  "AnswerText": "5. Other (Specify)",
+                  "AnswerValue": "5"
+                }
+              ],
+              "LinkedToQuestionId": null,
+              "LinkedToRosterId": null,
+              "PublicKey": "4a137c26-9740-f76d-47f2-eb450acae0e1",
+              "Children": [],
+              "ValidationConditions": [],
+              "Instructions": "",
+              "ColumnName": "q2_01"
+            },
+            {
+              "QuestionType": 7,
+              "Featured": false,
+              "VariableName": "q2_01S",
+              "VariableLabel": "",
+              "QuestionText": "2.01S. Please specify other",
+              "Answers": [],
+              "LinkedToQuestionId": null,
+              "LinkedToRosterId": null,
+              "PublicKey": "83aaca43-e641-cadf-47ac-b3b9b1315dc9",
+              "Children": [],
+              "ValidationConditions": [],
+              "Instructions": "",
+              "ColumnName": "q2_01s"
+            },
+            {
+              "CategoriesId": null,
+              "QuestionType": 0,
+              "Featured": false,
+              "VariableName": "q2_02",
+              "VariableLabel": "",
+              "QuestionText": "2.02. What is your position in this business?",
+              "Answers": [
+                {
+                  "AnswerText": "1. Owner",
+                  "AnswerValue": "1"
+                },
+                {
+                  "AnswerText": "2. Manager/operator",
+                  "AnswerValue": "2"
+                },
+                {
+                  "AnswerText": "3. Senior Supervisor",
+                  "AnswerValue": "3"
+                },
+                {
+                  "AnswerText": "4. Other Senior Position (Specify)",
+                  "AnswerValue": "4"
+                }
+              ],
+              "LinkedToQuestionId": null,
+              "LinkedToRosterId": null,
+              "PublicKey": "17d074db-1425-93b5-9f6d-aad054f065f3",
+              "Children": [],
+              "ValidationConditions": [],
+              "Instructions": "",
+              "ColumnName": "q2_02"
+            },
+            {
+              "QuestionType": 7,
+              "Featured": false,
+              "VariableName": "q2_02S",
+              "VariableLabel": "",
+              "QuestionText": "2.02S. Please specify other",
+              "Answers": [],
+              "LinkedToQuestionId": null,
+              "LinkedToRosterId": null,
+              "PublicKey": "65f921a0-03a7-770a-c10e-1d82cb9de362",
+              "Children": [],
+              "ValidationConditions": [],
+              "Instructions": "",
+              "ColumnName": "q2_02s"
+            },
+            {
+              "CategoriesId": null,
+              "QuestionType": 0,
+              "Featured": false,
+              "VariableName": "q2_03",
+              "VariableLabel": "",
+              "QuestionText": "2.03 How long has this facility been in operation?",
+              "Answers": [
+                {
+                  "AnswerText": "1. Under 3 years",
+                  "AnswerValue": "1"
+                },
+                {
+                  "AnswerText": "3 to 5 years",
+                  "AnswerValue": "2"
+                },
+                {
+                  "AnswerText": "4 to under 10 years",
+                  "AnswerValue": "3"
+                },
+                {
+                  "AnswerText": "10 to under 15 years",
+                  "AnswerValue": "4"
+                },
+                {
+                  "AnswerText": "15 to under 20 years",
+                  "AnswerValue": "5"
+                },
+                {
+                  "AnswerText": "20 years and over",
+                  "AnswerValue": "6"
+                }
+              ],
+              "LinkedToQuestionId": null,
+              "LinkedToRosterId": null,
+              "PublicKey": "611fba55-27c8-2dfc-1b5d-c7efc6244bb5",
+              "Children": [],
+              "ValidationConditions": [],
+              "Instructions": "",
+              "ColumnName": "q2_03"
+            },
+            {
+              "CategoriesId": null,
+              "QuestionType": 0,
+              "Featured": false,
+              "VariableName": "q2_04",
+              "VariableLabel": "",
+              "QuestionText": "2.04. How long has this facility been operating from this location?",
+              "Answers": [
+                {
+                  "AnswerText": "Under 3 years",
+                  "AnswerValue": "1"
+                },
+                {
+                  "AnswerText": "3 to 5 years",
+                  "AnswerValue": "2"
+                },
+                {
+                  "AnswerText": "4 to under 10 years",
+                  "AnswerValue": "3"
+                },
+                {
+                  "AnswerText": "10 to under 15 years",
+                  "AnswerValue": "4"
+                },
+                {
+                  "AnswerText": "15 to under 20 years",
+                  "AnswerValue": "5"
+                },
+                {
+                  "AnswerText": "20 years and over",
+                  "AnswerValue": "6"
+                }
+              ],
+              "LinkedToQuestionId": null,
+              "LinkedToRosterId": null,
+              "PublicKey": "378e500d-7de3-02b1-7531-5fd94cd42cbe",
+              "Children": [],
+              "ValidationConditions": [],
+              "Instructions": "",
+              "ColumnName": "q2_04"
+            },
+            {
+              "CategoriesId": null,
+              "QuestionType": 0,
+              "Featured": false,
+              "VariableName": "q2_05",
+              "VariableLabel": "",
+              "QuestionText": "2.05. Do you operate a similar Attraction/Event from another location?",
+              "Answers": [
+                {
+                  "AnswerText": "1. Yes",
+                  "AnswerValue": "1"
+                },
+                {
+                  "AnswerText": "2. No",
+                  "AnswerValue": "2"
+                }
+              ],
+              "LinkedToQuestionId": null,
+              "LinkedToRosterId": null,
+              "PublicKey": "2f4844f0-01b9-a0ee-2f79-ea69773c3bce",
+              "Children": [],
+              "ValidationConditions": [],
+              "Instructions": "",
+              "ColumnName": "q2_05"
+            },
+            {
+              "CategoriesId": null,
+              "QuestionType": 0,
+              "Featured": false,
+              "VariableName": "q2_06",
+              "VariableLabel": "",
+              "QuestionText": "2.06. Where else do you operate ?",
+              "Answers": [
+                {
+                  "AnswerText": "1. Elsewhere in Negril",
+                  "AnswerValue": "1"
+                },
+                {
+                  "AnswerText": "2. In another location in Westmoreland",
+                  "AnswerValue": "2"
+                },
+                {
+                  "AnswerText": "3. In another Parish",
+                  "AnswerValue": "3"
+                }
+              ],
+              "LinkedToQuestionId": null,
+              "LinkedToRosterId": null,
+              "PublicKey": "656463d1-dda7-8472-9583-684c9d2f2c96",
+              "Children": [],
+              "ValidationConditions": [],
+              "Instructions": "",
+              "ColumnName": "q2_06"
+            },
+            {
+              "CategoriesId": null,
+              "QuestionType": 0,
+              "Featured": false,
+              "VariableName": "q2_07",
+              "VariableLabel": "",
+              "QuestionText": "2.07.  Who is your main customer at this location?",
+              "Answers": [
+                {
+                  "AnswerText": "1. Local residents",
+                  "AnswerValue": "1"
+                },
+                {
+                  "AnswerText": "2. Tourists",
+                  "AnswerValue": "2"
+                },
+                {
+                  "AnswerText": "3. Jamaicans living overseas",
+                  "AnswerValue": "3"
+                },
+                {
+                  "AnswerText": "4. Other (specify)",
+                  "AnswerValue": "4"
+                }
+              ],
+              "LinkedToQuestionId": null,
+              "LinkedToRosterId": null,
+              "PublicKey": "d6823835-e35d-667a-945b-014e5c73c658",
+              "Children": [],
+              "ValidationConditions": [],
+              "Instructions": "",
+              "ColumnName": "q2_07"
+            },
+            {
+              "QuestionType": 7,
+              "Featured": false,
+              "VariableName": "q2_07S",
+              "VariableLabel": "",
+              "QuestionText": "2.07S. Please specify other",
+              "Answers": [],
+              "LinkedToQuestionId": null,
+              "LinkedToRosterId": null,
+              "PublicKey": "9bcd053c-ae3d-dde3-b76d-4426197ea97b",
+              "Children": [],
+              "ValidationConditions": [],
+              "Instructions": "",
+              "ColumnName": "q2_07s"
+            },
+            {
+              "CategoriesId": null,
+              "QuestionType": 0,
+              "Featured": false,
+              "VariableName": "q2_08",
+              "VariableLabel": "",
+              "QuestionText": "2.08. Do Tourists visit this facility?",
+              "Answers": [
+                {
+                  "AnswerText": "Yes",
+                  "AnswerValue": "1"
+                },
+                {
+                  "AnswerText": "No",
+                  "AnswerValue": "2"
+                }
+              ],
+              "LinkedToQuestionId": null,
+              "LinkedToRosterId": null,
+              "PublicKey": "9d9e82d7-80ba-946f-f6a4-9925e43b5260",
+              "Children": [],
+              "ValidationConditions": [],
+              "Instructions": "",
+              "ColumnName": "q2_08"
+            },
+            {
+              "CategoriesId": null,
+              "QuestionType": 0,
+              "Featured": false,
+              "VariableName": "q2_09",
+              "VariableLabel": "",
+              "QuestionText": "2.09. How often do tourists visit this facility?",
+              "Answers": [
+                {
+                  "AnswerText": "1. Very often",
+                  "AnswerValue": "1"
+                },
+                {
+                  "AnswerText": "2. Often",
+                  "AnswerValue": "2"
+                },
+                {
+                  "AnswerText": "3. Neither often or seldom",
+                  "AnswerValue": "3"
+                },
+                {
+                  "AnswerText": "4. Seldom",
+                  "AnswerValue": "4"
+                },
+                {
+                  "AnswerText": "5. Very seldom",
+                  "AnswerValue": "5"
+                }
+              ],
+              "LinkedToQuestionId": null,
+              "LinkedToRosterId": null,
+              "PublicKey": "1c550620-55e2-f0f5-15cc-6c888eee3d55",
+              "Children": [],
+              "ValidationConditions": [],
+              "Instructions": "",
+              "ColumnName": "q2_09"
+            },
+            {
+              "PublicKey": "858cdfc7-ab29-754c-924e-60dfb1d0ee5a",
+              "Children": [],
+              "ValidationConditions": [],
+              "ColumnName": "858cdfc7-ab29-754c-924e-60dfb1d0ee5a"
+            },
+            {
+              "QuestionType": 7,
+              "Featured": false,
+              "VariableName": "q2_10a",
+              "VariableLabel": "",
+              "QuestionText": "Country #1:",
+              "Answers": [],
+              "LinkedToQuestionId": null,
+              "LinkedToRosterId": null,
+              "PublicKey": "10d9083b-1842-d848-3222-e78c97edb69f",
+              "Children": [],
+              "ValidationConditions": [],
+              "Instructions": "",
+              "ColumnName": "q2_10a"
+            },
+            {
+              "QuestionType": 7,
+              "Featured": false,
+              "VariableName": "q2_10b",
+              "VariableLabel": "",
+              "QuestionText": "Country #2:",
+              "Answers": [],
+              "LinkedToQuestionId": null,
+              "LinkedToRosterId": null,
+              "PublicKey": "0b5c4bc8-d198-9749-e6d9-1f359dcc9c47",
+              "Children": [],
+              "ValidationConditions": [],
+              "Instructions": "",
+              "ColumnName": "q2_10b"
+            },
+            {
+              "QuestionType": 7,
+              "Featured": false,
+              "VariableName": "q2_10c",
+              "VariableLabel": "",
+              "QuestionText": "Country #3:",
+              "Answers": [],
+              "LinkedToQuestionId": null,
+              "LinkedToRosterId": null,
+              "PublicKey": "97a300a0-a166-9611-3465-ed13a2023883",
+              "Children": [],
+              "ValidationConditions": [],
+              "Instructions": "",
+              "ColumnName": "q2_10c"
+            },
+            {
+              "CategoriesId": null,
+              "QuestionType": 0,
+              "Featured": false,
+              "VariableName": "q2_11",
+              "VariableLabel": "",
+              "QuestionText": "2.11. Is this attraction/Event open to children?",
+              "Answers": [
+                {
+                  "AnswerText": "1. Yes, all ages",
+                  "AnswerValue": "1"
+                },
+                {
+                  "AnswerText": "2. Yes, children under 4 years",
+                  "AnswerValue": "2"
+                },
+                {
+                  "AnswerText": "3. Yes, children over 4 years",
+                  "AnswerValue": "3"
+                },
+                {
+                  "AnswerText": "4. No",
+                  "AnswerValue": "4"
+                }
+              ],
+              "LinkedToQuestionId": null,
+              "LinkedToRosterId": null,
+              "PublicKey": "24284a78-201a-9ab7-bfa1-3ae4ad787793",
+              "Children": [],
+              "ValidationConditions": [],
+              "Instructions": "",
+              "ColumnName": "q2_11"
+            },
+            {
+              "YesNoView": false,
+              "AreAnswersOrdered": false,
+              "IsFilteredCombobox": false,
+              "CategoriesId": null,
+              "MaxAllowedAnswers": null,
+              "QuestionType": 3,
+              "Featured": false,
+              "VariableName": "q2_12",
+              "VariableLabel": "",
+              "QuestionText": "2.12. What amenities/services are available at this facility",
+              "Answers": [
+                {
+                  "AnswerText": "1. Restaurant",
+                  "AnswerValue": "1"
+                },
+                {
+                  "AnswerText": "2. Swimming Facilities/Pool",
+                  "AnswerValue": "2"
+                },
+                {
+                  "AnswerText": "3. Porter Service",
+                  "AnswerValue": "3"
+                },
+                {
+                  "AnswerText": "4. Internet /Wi-Fi",
+                  "AnswerValue": "4"
+                },
+                {
+                  "AnswerText": "5. Duty free shop",
+                  "AnswerValue": "5"
+                },
+                {
+                  "AnswerText": "6. Transportation Service",
+                  "AnswerValue": "6"
+                },
+                {
+                  "AnswerText": "7. Souvenir Shop",
+                  "AnswerValue": "7"
+                },
+                {
+                  "AnswerText": "8. Adequate Parking",
+                  "AnswerValue": "8"
+                },
+                {
+                  "AnswerText": "9. Other (Specify)",
+                  "AnswerValue": "9"
+                }
+              ],
+              "LinkedToQuestionId": null,
+              "LinkedToRosterId": null,
+              "PublicKey": "6728f820-4e09-0135-1e18-4b30eccd3582",
+              "Children": [],
+              "ValidationConditions": [],
+              "Instructions": "Select all that applies",
+              "ColumnName": "q2_12"
+            },
+            {
+              "QuestionType": 7,
+              "Featured": false,
+              "VariableName": "q2_12S",
+              "VariableLabel": "",
+              "QuestionText": "2.12S. Please specify other",
+              "Answers": [],
+              "LinkedToQuestionId": null,
+              "LinkedToRosterId": null,
+              "PublicKey": "25b1b92e-d4cb-ba95-23b3-7ce82902e7b3",
+              "Children": [],
+              "ValidationConditions": [],
+              "Instructions": "",
+              "ColumnName": "q2_12s"
+            },
+            {
+              "IsInteger": true,
+              "QuestionType": 4,
+              "Featured": false,
+              "VariableName": "q2_13",
+              "VariableLabel": "",
+              "QuestionText": "2.13. What is the average price to enter or use this facility?",
+              "Answers": [],
+              "LinkedToQuestionId": null,
+              "LinkedToRosterId": null,
+              "PublicKey": "33f23d37-00d6-a875-7d5d-b010a9c24e80",
+              "Children": [],
+              "ValidationConditions": [],
+              "Instructions": "",
+              "ColumnName": "q2_13"
+            },
+            {
+              "CategoriesId": null,
+              "QuestionType": 0,
+              "Featured": false,
+              "VariableName": "q2_13a",
+              "VariableLabel": "",
+              "QuestionText": "2.13a. Currency",
+              "Answers": [
+                {
+                  "AnswerText": "1. $JA",
+                  "AnswerValue": "1"
+                },
+                {
+                  "AnswerText": "2. $US",
+                  "AnswerValue": "2"
+                }
+              ],
+              "LinkedToQuestionId": null,
+              "LinkedToRosterId": null,
+              "PublicKey": "00f410c9-de32-73e3-d7d9-80e49a614d64",
+              "Children": [],
+              "ValidationConditions": [],
+              "Instructions": "",
+              "ColumnName": "q2_13a"
+            },
+            {
+              "PublicKey": "385ecc35-8ac8-51b9-ac4b-984085b0e017",
+              "Children": [],
+              "Type": 1,
+              "Name": "unanswered_attractionSec",
+              "Label": "",
+              "Expression": "NumberUnansweredQuestions(attractionSec)",
+              "DoNotExport": true,
+              "ColumnName": "unanswered_attractionsec",
+              "IsExportable": false
+            },
+            {
+              "PublicKey": "e10438d4-3c49-88da-4e9c-f843992b52b1",
+              "Children": [],
+              "ValidationConditions": [],
+              "ColumnName": "e10438d4-3c49-88da-4e9c-f843992b52b1"
+            }
+          ],
+          "HasAnyExportableChild": true,
+          "TableName": "XGeYtfNsAkC9mEoHbaH99g$2",
+          "EnablementTableName": "XGeYtfNsAkC9mEoHbaH99g$2-e",
+          "ValidityTableName": "XGeYtfNsAkC9mEoHbaH99g$2-v",
+          "DoesSupportDataTable": true,
+          "DoesSupportEnablementTable": true,
+          "DoesSupportValidityTable": true,
+          "IsInsideRoster": false,
+          "ColumnName": "attractionsec"
+        }
+      ],
+      "HasAnyExportableChild": true,
+      "TableName": "XGeYtfNsAkC9mEoHbaH99g$2",
+      "EnablementTableName": "XGeYtfNsAkC9mEoHbaH99g$2-e",
+      "ValidityTableName": "XGeYtfNsAkC9mEoHbaH99g$2-v",
+      "DoesSupportDataTable": true,
+      "DoesSupportEnablementTable": true,
+      "DoesSupportValidityTable": true,
+      "IsInsideRoster": false,
+      "ColumnName": "gcharacteristics"
+    },
+    {
+      "IsRoster": false,
+      "RosterSizeQuestionId": null,
+      "RosterSizeSource": 0,
+      "IsFixedRoster": false,
+      "FixedRosterTitles": [],
+      "VariableName": "bCharacteristics",
+      "Title": "SECTION 3 - BUSINESS CHARACTERISTICS",
+      "RosterTitleQuestionId": null,
+      "PublicKey": "a268b540-429b-1e2f-7f28-9c5ede77d11d",
+      "Children": [
+        {
+          "PublicKey": "a4f59802-8f2f-f345-ca2a-b844368d0a3f",
+          "Children": [],
+          "ValidationConditions": [],
+          "ColumnName": "a4f59802-8f2f-f345-ca2a-b844368d0a3f"
+        },
+        {
+          "PublicKey": "d4932763-583b-3f18-1498-807b7e86d676",
+          "Children": [],
+          "ValidationConditions": [],
+          "ColumnName": "d4932763-583b-3f18-1498-807b7e86d676"
+        },
+        {
+          "IsInteger": true,
+          "QuestionType": 4,
+          "Featured": false,
+          "VariableName": "q3_01a",
+          "VariableLabel": "",
+          "QuestionText": "Full time employee(s):",
+          "Answers": [],
+          "LinkedToQuestionId": null,
+          "LinkedToRosterId": null,
+          "PublicKey": "66ccfcee-94d8-3cc5-1a69-1d63f45324df",
+          "Children": [],
+          "ValidationConditions": [],
+          "Instructions": "",
+          "ColumnName": "q3_01a"
+        },
+        {
+          "IsInteger": true,
+          "QuestionType": 4,
+          "Featured": false,
+          "VariableName": "q3_01b",
+          "VariableLabel": "",
+          "QuestionText": "Part time employee(s):",
+          "Answers": [],
+          "LinkedToQuestionId": null,
+          "LinkedToRosterId": null,
+          "PublicKey": "4156364d-2f97-c1f0-2b10-11b795f85dce",
+          "Children": [],
+          "ValidationConditions": [],
+          "Instructions": "",
+          "ColumnName": "q3_01b"
+        },
+        {
+          "IsInteger": true,
+          "QuestionType": 4,
+          "Featured": false,
+          "VariableName": "q3_01c",
+          "VariableLabel": "",
+          "QuestionText": "Casual employee(s):",
+          "Answers": [],
+          "LinkedToQuestionId": null,
+          "LinkedToRosterId": null,
+          "PublicKey": "d98f9c32-9e1e-44a5-bb20-82ffa2f58baa",
+          "Children": [],
+          "ValidationConditions": [],
+          "Instructions": "",
+          "ColumnName": "q3_01c"
+        },
+        {
+          "PublicKey": "811626cf-5fbd-22e9-109d-77003ae5f0c5",
+          "Children": [],
+          "Type": 1,
+          "Name": "emplyeesize",
+          "Label": "",
+          "Expression": "(IsAnswered(q3_01a) ? q3_01a : 0) +\n(IsAnswered(q3_01b) ? q3_01b : 0) +\n(IsAnswered(q3_01c) ? q3_01c : 0) ",
+          "DoNotExport": false,
+          "ColumnName": "emplyeesize",
+          "IsExportable": true
+        },
+        {
+          "PublicKey": "c987e7ae-e3e3-7d95-6749-5785e3e71f0a",
+          "Children": [],
+          "ValidationConditions": [],
+          "ColumnName": "c987e7ae-e3e3-7d95-6749-5785e3e71f0a"
+        },
+        {
+          "PublicKey": "cee0ff2c-3b32-1491-fc4d-43a6496dc1ce",
+          "Children": [],
+          "Type": 2,
+          "Name": "sumemployee",
+          "Label": "",
+          "Expression": "q3_01a + q3_01b + q3_01c",
+          "DoNotExport": false,
+          "ColumnName": "sumemployee",
+          "IsExportable": true
+        },
+        {
+          "PublicKey": "17aa6479-9f70-002c-e603-abac97f23a9b",
+          "Children": [],
+          "ValidationConditions": [],
+          "ColumnName": "17aa6479-9f70-002c-e603-abac97f23a9b"
+        },
+        {
+          "IsInteger": true,
+          "QuestionType": 4,
+          "Featured": false,
+          "VariableName": "q3_02a",
+          "VariableLabel": "",
+          "QuestionText": "a. People living in Negril (did not relocate for the job)",
+          "Answers": [],
+          "LinkedToQuestionId": null,
+          "LinkedToRosterId": null,
+          "PublicKey": "214bcc54-e8f5-5782-9d0f-f0d3edf6a834",
+          "Children": [],
+          "ValidationConditions": [],
+          "Instructions": "",
+          "ColumnName": "q3_02a"
+        },
+        {
+          "IsInteger": true,
+          "QuestionType": 4,
+          "Featured": false,
+          "VariableName": "q3_02b",
+          "VariableLabel": "",
+          "QuestionText": "b. People living in the Parish",
+          "Answers": [],
+          "LinkedToQuestionId": null,
+          "LinkedToRosterId": null,
+          "PublicKey": "77ad784f-df3c-c193-af0d-767b8074138b",
+          "Children": [],
+          "ValidationConditions": [],
+          "Instructions": "",
+          "ColumnName": "q3_02b"
+        },
+        {
+          "IsInteger": true,
+          "QuestionType": 4,
+          "Featured": false,
+          "VariableName": "q3_02c",
+          "VariableLabel": "",
+          "QuestionText": "c. People living in Jamaica",
+          "Answers": [],
+          "LinkedToQuestionId": null,
+          "LinkedToRosterId": null,
+          "PublicKey": "dc75592a-813f-a3ed-4bd7-a53874a683da",
+          "Children": [],
+          "ValidationConditions": [],
+          "Instructions": "",
+          "ColumnName": "q3_02c"
+        },
+        {
+          "IsInteger": true,
+          "QuestionType": 4,
+          "Featured": false,
+          "VariableName": "q3_02d",
+          "VariableLabel": "",
+          "QuestionText": "d. Overseas workers",
+          "Answers": [],
+          "LinkedToQuestionId": null,
+          "LinkedToRosterId": null,
+          "PublicKey": "c1f809ea-412f-857b-0db8-a85e0da6c667",
+          "Children": [],
+          "ValidationConditions": [],
+          "Instructions": "",
+          "ColumnName": "q3_02d"
+        },
+        {
+          "CategoriesId": null,
+          "QuestionType": 0,
+          "Featured": false,
+          "VariableName": "q3_03",
+          "VariableLabel": "",
+          "QuestionText": "3.03. Did the business have any difficulties recruiting people for any position in 2019",
+          "Answers": [
+            {
+              "AnswerText": "Yes",
+              "AnswerValue": "1"
+            },
+            {
+              "AnswerText": "No",
+              "AnswerValue": "2"
+            }
+          ],
+          "LinkedToQuestionId": null,
+          "LinkedToRosterId": null,
+          "PublicKey": "582ebaad-6731-17fd-d3e2-5c3c2b8c5687",
+          "Children": [],
+          "ValidationConditions": [],
+          "Instructions": "",
+          "ColumnName": "q3_03"
+        },
+        {
+          "PublicKey": "7765b7c2-bb18-14f2-e399-12a8e4982c0c",
+          "Children": [],
+          "ValidationConditions": [],
+          "ColumnName": "7765b7c2-bb18-14f2-e399-12a8e4982c0c"
+        },
+        {
+          "QuestionType": 7,
+          "Featured": false,
+          "VariableName": "q3_04a",
+          "VariableLabel": "",
+          "QuestionText": "3.04a. Occupation #1",
+          "Answers": [],
+          "LinkedToQuestionId": null,
+          "LinkedToRosterId": null,
+          "PublicKey": "fa943acf-7377-624f-866a-cc21f6b41980",
+          "Children": [],
+          "ValidationConditions": [],
+          "Instructions": "",
+          "ColumnName": "q3_04a"
+        },
+        {
+          "QuestionType": 7,
+          "Featured": false,
+          "VariableName": "q3_04b",
+          "VariableLabel": "",
+          "QuestionText": "3.04b. Occupation #2",
+          "Answers": [],
+          "LinkedToQuestionId": null,
+          "LinkedToRosterId": null,
+          "PublicKey": "850fd2fc-d2d9-18d1-0952-ef6fa89e5c3d",
+          "Children": [],
+          "ValidationConditions": [],
+          "Instructions": "",
+          "ColumnName": "q3_04b"
+        },
+        {
+          "QuestionType": 7,
+          "Featured": false,
+          "VariableName": "q3_04c",
+          "VariableLabel": "",
+          "QuestionText": "3.04c. Occupation #3",
+          "Answers": [],
+          "LinkedToQuestionId": null,
+          "LinkedToRosterId": null,
+          "PublicKey": "5b03f123-659c-6a9e-4616-9ad9e77d302c",
+          "Children": [],
+          "ValidationConditions": [],
+          "Instructions": "",
+          "ColumnName": "q3_04c"
+        },
+        {
+          "CategoriesId": null,
+          "QuestionType": 0,
+          "Featured": false,
+          "VariableName": "q3_05",
+          "VariableLabel": "",
+          "QuestionText": "3.05. Which of the following reasons contributed to the difficulty in recruiting people for positions in the business?",
+          "Answers": [
+            {
+              "AnswerText": "1. Applicants did't have the right skills",
+              "AnswerValue": "1"
+            },
+            {
+              "AnswerText": "2. Applicants did not have the required qualification/education",
+              "AnswerValue": "2"
+            },
+            {
+              "AnswerText": "3. Applicants did not have the right work experience",
+              "AnswerValue": "3"
+            },
+            {
+              "AnswerText": "4. Applicants lacked appropriate flexibility for the role",
+              "AnswerValue": "4"
+            },
+            {
+              "AnswerText": "5. Other local tourism and hospitality employers were more attractive to workers",
+              "AnswerValue": "5"
+            },
+            {
+              "AnswerText": "6. Cruise lines or other overseas tourism and hospitality employers were more attractive",
+              "AnswerValue": "6"
+            },
+            {
+              "AnswerText": "7. Employers outside tourism and hospitality were more attractive to workers",
+              "AnswerValue": "7"
+            },
+            {
+              "AnswerText": "8. Other external factors such as place to live",
+              "AnswerValue": "8"
+            },
+            {
+              "AnswerText": "9. Restrictions around employment conditions, such as working hours or wages",
+              "AnswerValue": "9"
+            }
+          ],
+          "LinkedToQuestionId": null,
+          "LinkedToRosterId": null,
+          "PublicKey": "0a41c44b-8006-f656-0d12-92347806fe35",
+          "Children": [],
+          "ValidationConditions": [],
+          "Instructions": "",
+          "ColumnName": "q3_05"
+        },
+        {
+          "CategoriesId": null,
+          "QuestionType": 0,
+          "Featured": false,
+          "VariableName": "q3_05a",
+          "VariableLabel": "",
+          "QuestionText": "3.05a. To what extent?",
+          "Answers": [
+            {
+              "AnswerText": "To a great extent",
+              "AnswerValue": "1"
+            },
+            {
+              "AnswerText": "To a moderate extent",
+              "AnswerValue": "2"
+            },
+            {
+              "AnswerText": "To a minimal extent",
+              "AnswerValue": "3"
+            },
+            {
+              "AnswerText": "No extent at all",
+              "AnswerValue": "4"
+            }
+          ],
+          "LinkedToQuestionId": null,
+          "LinkedToRosterId": null,
+          "PublicKey": "682d0998-9182-07fc-582f-8fac2e4612fc",
+          "Children": [],
+          "ValidationConditions": [],
+          "Instructions": "",
+          "ColumnName": "q3_05a"
+        },
+        {
+          "CategoriesId": null,
+          "QuestionType": 0,
+          "Featured": false,
+          "VariableName": "q3_06",
+          "VariableLabel": "",
+          "QuestionText": "3.06. Did the business have any difficulty retaining employees in 2019?",
+          "Answers": [
+            {
+              "AnswerText": "Yes",
+              "AnswerValue": "1"
+            },
+            {
+              "AnswerText": "No",
+              "AnswerValue": "2"
+            }
+          ],
+          "LinkedToQuestionId": null,
+          "LinkedToRosterId": null,
+          "PublicKey": "c939ffc9-95fc-c907-887b-b1a07cbd07dd",
+          "Children": [],
+          "ValidationConditions": [],
+          "Instructions": "",
+          "ColumnName": "q3_06"
+        },
+        {
+          "PublicKey": "37a6084e-ac8b-8c01-b704-b9f19d030cb9",
+          "Children": [],
+          "ValidationConditions": [],
+          "ColumnName": "37a6084e-ac8b-8c01-b704-b9f19d030cb9"
+        },
+        {
+          "CategoriesId": null,
+          "QuestionType": 0,
+          "Featured": false,
+          "VariableName": "q3_06a",
+          "VariableLabel": "",
+          "QuestionText": "A. Employee not a good match for the job",
+          "Answers": [
+            {
+              "AnswerText": "1. To a great extent",
+              "AnswerValue": "1"
+            },
+            {
+              "AnswerText": "2. To a moderate extent",
+              "AnswerValue": "2"
+            },
+            {
+              "AnswerText": "3. To a minimal extent",
+              "AnswerValue": "3"
+            },
+            {
+              "AnswerText": "4. Not at all",
+              "AnswerValue": "4"
+            }
+          ],
+          "LinkedToQuestionId": null,
+          "LinkedToRosterId": null,
+          "PublicKey": "3a28f4e3-4bd6-6a4f-f829-0eeb5c53d94a",
+          "Children": [],
+          "ValidationConditions": [],
+          "Instructions": "",
+          "ColumnName": "q3_06a"
+        },
+        {
+          "CategoriesId": null,
+          "QuestionType": 0,
+          "Featured": false,
+          "VariableName": "q3_06b",
+          "VariableLabel": "",
+          "QuestionText": "B. Unhappy with employment conditions (e.g hours)",
+          "Answers": [
+            {
+              "AnswerText": "1. To a great extent",
+              "AnswerValue": "1"
+            },
+            {
+              "AnswerText": "2. To a moderate extent",
+              "AnswerValue": "2"
+            },
+            {
+              "AnswerText": "3. To a minimal extent",
+              "AnswerValue": "3"
+            },
+            {
+              "AnswerText": "4. Not at all",
+              "AnswerValue": "4"
+            }
+          ],
+          "LinkedToQuestionId": null,
+          "LinkedToRosterId": null,
+          "PublicKey": "c830529d-0740-3228-88f9-9ff5883554d6",
+          "Children": [],
+          "ValidationConditions": [],
+          "Instructions": "",
+          "ColumnName": "q3_06b"
+        },
+        {
+          "CategoriesId": null,
+          "QuestionType": 0,
+          "Featured": false,
+          "VariableName": "q3_06c",
+          "VariableLabel": "",
+          "QuestionText": "C. Unhappy with wages",
+          "Answers": [
+            {
+              "AnswerText": "1. To a great extent",
+              "AnswerValue": "1"
+            },
+            {
+              "AnswerText": "2. To a moderate extent",
+              "AnswerValue": "2"
+            },
+            {
+              "AnswerText": "3. To a minimal extent",
+              "AnswerValue": "3"
+            },
+            {
+              "AnswerText": "4. Not at all",
+              "AnswerValue": "4"
+            }
+          ],
+          "LinkedToQuestionId": null,
+          "LinkedToRosterId": null,
+          "PublicKey": "9f33561b-854b-8aa6-2e32-2ada7852cce1",
+          "Children": [],
+          "ValidationConditions": [],
+          "Instructions": "",
+          "ColumnName": "q3_06c"
+        },
+        {
+          "CategoriesId": null,
+          "QuestionType": 0,
+          "Featured": false,
+          "VariableName": "q3_06d",
+          "VariableLabel": "",
+          "QuestionText": "D. Employee had poor commitment to roles/was unreliable",
+          "Answers": [
+            {
+              "AnswerText": "1. To a great extent",
+              "AnswerValue": "1"
+            },
+            {
+              "AnswerText": "2. To a moderate extent",
+              "AnswerValue": "2"
+            },
+            {
+              "AnswerText": "3. To a minimal extent",
+              "AnswerValue": "3"
+            },
+            {
+              "AnswerText": "4. Not at all",
+              "AnswerValue": "4"
+            }
+          ],
+          "LinkedToQuestionId": null,
+          "LinkedToRosterId": null,
+          "PublicKey": "a16fc65f-0c4a-d152-99fa-bb7a1aed0e48",
+          "Children": [],
+          "ValidationConditions": [],
+          "Instructions": "",
+          "ColumnName": "q3_06d"
+        },
+        {
+          "CategoriesId": null,
+          "QuestionType": 0,
+          "Featured": false,
+          "VariableName": "q3_06e",
+          "VariableLabel": "",
+          "QuestionText": "E. Employees leave for personal reasons (retirement, family, illness, study, migrate etc.",
+          "Answers": [
+            {
+              "AnswerText": "1. To a great extent",
+              "AnswerValue": "1"
+            },
+            {
+              "AnswerText": "2. To a moderate extent",
+              "AnswerValue": "2"
+            },
+            {
+              "AnswerText": "3. To a minimal extent",
+              "AnswerValue": "3"
+            },
+            {
+              "AnswerText": "4. Not at all",
+              "AnswerValue": "4"
+            }
+          ],
+          "LinkedToQuestionId": null,
+          "LinkedToRosterId": null,
+          "PublicKey": "4f75c488-45b8-ae6e-d668-a2b1a7de31fb",
+          "Children": [],
+          "ValidationConditions": [],
+          "Instructions": "",
+          "ColumnName": "q3_06e"
+        },
+        {
+          "CategoriesId": null,
+          "QuestionType": 0,
+          "Featured": false,
+          "VariableName": "q3_06f",
+          "VariableLabel": "",
+          "QuestionText": "F. Competitive job offers received from other businesses in the industry",
+          "Answers": [
+            {
+              "AnswerText": "1. To a great extent",
+              "AnswerValue": "1"
+            },
+            {
+              "AnswerText": "2. To a moderate extent",
+              "AnswerValue": "2"
+            },
+            {
+              "AnswerText": "3. To a minimal extent",
+              "AnswerValue": "3"
+            },
+            {
+              "AnswerText": "4. Not at all",
+              "AnswerValue": "4"
+            }
+          ],
+          "LinkedToQuestionId": null,
+          "LinkedToRosterId": null,
+          "PublicKey": "1030d33b-67f3-31ef-ddee-05c3cc4abd50",
+          "Children": [],
+          "ValidationConditions": [],
+          "Instructions": "",
+          "ColumnName": "q3_06f"
+        },
+        {
+          "CategoriesId": null,
+          "QuestionType": 0,
+          "Featured": false,
+          "VariableName": "q3_06g",
+          "VariableLabel": "",
+          "QuestionText": "G. Other external factors such as accommodation and cost of living",
+          "Answers": [
+            {
+              "AnswerText": "1. To a great extent",
+              "AnswerValue": "1"
+            },
+            {
+              "AnswerText": "2. To a moderate extent",
+              "AnswerValue": "2"
+            },
+            {
+              "AnswerText": "3. To a minimal extent",
+              "AnswerValue": "3"
+            },
+            {
+              "AnswerText": "4. Not at all",
+              "AnswerValue": "4"
+            }
+          ],
+          "LinkedToQuestionId": null,
+          "LinkedToRosterId": null,
+          "PublicKey": "4fa8a0ba-0441-0902-6381-923432a5d9c4",
+          "Children": [],
+          "ValidationConditions": [],
+          "Instructions": "",
+          "ColumnName": "q3_06g"
+        },
+        {
+          "CategoriesId": null,
+          "QuestionType": 0,
+          "Featured": false,
+          "VariableName": "q3_06h",
+          "VariableLabel": "",
+          "QuestionText": "H. Employee see role as short-term option",
+          "Answers": [
+            {
+              "AnswerText": "1. To a great extent",
+              "AnswerValue": "1"
+            },
+            {
+              "AnswerText": "2. To a moderate extent",
+              "AnswerValue": "2"
+            },
+            {
+              "AnswerText": "3. To a minimal extent",
+              "AnswerValue": "3"
+            },
+            {
+              "AnswerText": "4. Not at all",
+              "AnswerValue": "4"
+            }
+          ],
+          "LinkedToQuestionId": null,
+          "LinkedToRosterId": null,
+          "PublicKey": "412202a3-f9b9-79b0-6bbb-5ab0e0f89fc8",
+          "Children": [],
+          "ValidationConditions": [],
+          "Instructions": "",
+          "ColumnName": "q3_06h"
+        },
+        {
+          "CategoriesId": null,
+          "QuestionType": 0,
+          "Featured": false,
+          "VariableName": "q3_06i",
+          "VariableLabel": "",
+          "QuestionText": "I. Employees leave for personal reasons (retirement, family, illness, study, migrate etc.",
+          "Answers": [
+            {
+              "AnswerText": "1. To a great extent",
+              "AnswerValue": "1"
+            },
+            {
+              "AnswerText": "2. To a moderate extent",
+              "AnswerValue": "2"
+            },
+            {
+              "AnswerText": "3. To a minimal extent",
+              "AnswerValue": "3"
+            },
+            {
+              "AnswerText": "4. Not at all",
+              "AnswerValue": "4"
+            }
+          ],
+          "LinkedToQuestionId": null,
+          "LinkedToRosterId": null,
+          "PublicKey": "4bf1f808-f238-1ed3-e583-c612ee769f2b",
+          "Children": [],
+          "ValidationConditions": [],
+          "Instructions": "",
+          "ColumnName": "q3_06i"
+        },
+        {
+          "CategoriesId": null,
+          "QuestionType": 0,
+          "Featured": false,
+          "VariableName": "q3_06j",
+          "VariableLabel": "",
+          "QuestionText": "J. Employee received job offers from businesses in other industries",
+          "Answers": [
+            {
+              "AnswerText": "1. To a great extent",
+              "AnswerValue": "1"
+            },
+            {
+              "AnswerText": "2. To a moderate extent",
+              "AnswerValue": "2"
+            },
+            {
+              "AnswerText": "3. To a minimal extent",
+              "AnswerValue": "3"
+            },
+            {
+              "AnswerText": "4. Not at all",
+              "AnswerValue": "4"
+            }
+          ],
+          "LinkedToQuestionId": null,
+          "LinkedToRosterId": null,
+          "PublicKey": "526beecf-3b0b-efd7-7b99-c1a0080a474f",
+          "Children": [],
+          "ValidationConditions": [],
+          "Instructions": "",
+          "ColumnName": "q3_06j"
+        },
+        {
+          "CategoriesId": null,
+          "QuestionType": 0,
+          "Featured": false,
+          "VariableName": "q3_06k",
+          "VariableLabel": "",
+          "QuestionText": "K. Employee visa conditions prevented them from staying",
+          "Answers": [
+            {
+              "AnswerText": "1. To a great extent",
+              "AnswerValue": "1"
+            },
+            {
+              "AnswerText": "2. To a moderate extent",
+              "AnswerValue": "2"
+            },
+            {
+              "AnswerText": "3. To a minimal extent",
+              "AnswerValue": "3"
+            },
+            {
+              "AnswerText": "4. Not at all",
+              "AnswerValue": "4"
+            }
+          ],
+          "LinkedToQuestionId": null,
+          "LinkedToRosterId": null,
+          "PublicKey": "4e239989-ad9c-4716-44ab-a238dceddbd1",
+          "Children": [],
+          "ValidationConditions": [],
+          "Instructions": "",
+          "ColumnName": "q3_06k"
+        },
+        {
+          "CategoriesId": null,
+          "QuestionType": 0,
+          "Featured": false,
+          "VariableName": "q3_08",
+          "VariableLabel": "",
+          "QuestionText": "3.08. In which season do you have the least visitors to this facility?",
+          "Answers": [
+            {
+              "AnswerText": "1. Winter (December - February)",
+              "AnswerValue": "1"
+            },
+            {
+              "AnswerText": "2. Summer (June - August)",
+              "AnswerValue": "2"
+            },
+            {
+              "AnswerText": "3. Spring (March - May)",
+              "AnswerValue": "3"
+            },
+            {
+              "AnswerText": "4. Autumn (September - November)",
+              "AnswerValue": "4"
+            },
+            {
+              "AnswerText": "96. Don't Know",
+              "AnswerValue": "96"
+            }
+          ],
+          "LinkedToQuestionId": null,
+          "LinkedToRosterId": null,
+          "PublicKey": "00fe3c29-fb63-401b-7ed8-57bb66dc6ba3",
+          "Children": [],
+          "ValidationConditions": [],
+          "Instructions": "",
+          "ColumnName": "q3_08"
+        },
+        {
+          "CategoriesId": null,
+          "QuestionType": 0,
+          "Featured": false,
+          "VariableName": "q3_09",
+          "VariableLabel": "",
+          "QuestionText": "3.09. Were more employees hired during this period?",
+          "Answers": [
+            {
+              "AnswerText": "Yes",
+              "AnswerValue": "1"
+            },
+            {
+              "AnswerText": "No",
+              "AnswerValue": "2"
+            }
+          ],
+          "LinkedToQuestionId": null,
+          "LinkedToRosterId": null,
+          "PublicKey": "28b2755b-3ef2-2b73-88db-84c987bd3b94",
+          "Children": [],
+          "ValidationConditions": [],
+          "Instructions": "",
+          "ColumnName": "q3_09"
+        },
+        {
+          "CategoriesId": null,
+          "QuestionType": 0,
+          "Featured": false,
+          "VariableName": "q3_10",
+          "VariableLabel": "",
+          "QuestionText": "3.10. In which season do you have the least visitor to this facility?",
+          "Answers": [
+            {
+              "AnswerText": "1. Winter (December - February)",
+              "AnswerValue": "1"
+            },
+            {
+              "AnswerText": "2. Summer (June - August)",
+              "AnswerValue": "2"
+            },
+            {
+              "AnswerText": "3. Spring (March - May)",
+              "AnswerValue": "3"
+            },
+            {
+              "AnswerText": "4. Autumn (September - November)",
+              "AnswerValue": "4"
+            },
+            {
+              "AnswerText": "96. Don't Know",
+              "AnswerValue": "96"
+            }
+          ],
+          "LinkedToQuestionId": null,
+          "LinkedToRosterId": null,
+          "PublicKey": "e6786cc3-d320-5324-46af-3948d5b80858",
+          "Children": [],
+          "ValidationConditions": [],
+          "Instructions": "",
+          "ColumnName": "q3_10"
+        },
+        {
+          "CategoriesId": null,
+          "QuestionType": 0,
+          "Featured": false,
+          "VariableName": "q3_11",
+          "VariableLabel": "",
+          "QuestionText": "3.11. Were employees laid-off during this period?",
+          "Answers": [
+            {
+              "AnswerText": "Yes",
+              "AnswerValue": "1"
+            },
+            {
+              "AnswerText": "No",
+              "AnswerValue": "2"
+            }
+          ],
+          "LinkedToQuestionId": null,
+          "LinkedToRosterId": null,
+          "PublicKey": "e21b9db5-4141-8f96-4814-a98cbf39c2c0",
+          "Children": [],
+          "ValidationConditions": [],
+          "Instructions": "",
+          "ColumnName": "q3_11"
+        },
+        {
+          "CategoriesId": null,
+          "QuestionType": 0,
+          "Featured": false,
+          "VariableName": "q3_12",
+          "VariableLabel": "",
+          "QuestionText": "3.12. How do you mostly advertise this facility?",
+          "Answers": [
+            {
+              "AnswerText": "1. Word of mouth",
+              "AnswerValue": "1"
+            },
+            {
+              "AnswerText": "2  Radio/Television",
+              "AnswerValue": "2"
+            },
+            {
+              "AnswerText": "3. Newspaper",
+              "AnswerValue": "3"
+            },
+            {
+              "AnswerText": "4. Business cards, pamphlets, fliers",
+              "AnswerValue": "4"
+            },
+            {
+              "AnswerText": "5. Tour Operator/Booking agents",
+              "AnswerValue": "5"
+            },
+            {
+              "AnswerText": "6. Internet",
+              "AnswerValue": "6"
+            },
+            {
+              "AnswerText": "7.Telephone Directory",
+              "AnswerValue": "7"
+            },
+            {
+              "AnswerText": "8. Business sign",
+              "AnswerValue": "8"
+            },
+            {
+              "AnswerText": "9. Do not advertise",
+              "AnswerValue": "9"
+            },
+            {
+              "AnswerText": "10. Other (specify)",
+              "AnswerValue": "10"
+            }
+          ],
+          "LinkedToQuestionId": null,
+          "LinkedToRosterId": null,
+          "PublicKey": "6ec82b66-d4fe-2338-284a-c634790c43fb",
+          "Children": [],
+          "ValidationConditions": [],
+          "Instructions": "",
+          "ColumnName": "q3_12"
+        },
+        {
+          "QuestionType": 7,
+          "Featured": false,
+          "VariableName": "q3_12S",
+          "VariableLabel": "",
+          "QuestionText": "3.12S. Please specify other",
+          "Answers": [],
+          "LinkedToQuestionId": null,
+          "LinkedToRosterId": null,
+          "PublicKey": "2098a042-a607-d5a6-04ae-86f376d414f2",
+          "Children": [],
+          "ValidationConditions": [],
+          "Instructions": "",
+          "ColumnName": "q3_12s"
+        },
+        {
+          "CategoriesId": null,
+          "QuestionType": 0,
+          "Featured": false,
+          "VariableName": "q3_13",
+          "VariableLabel": "",
+          "QuestionText": "3.13. Do you using the internet for the operation of the business?",
+          "Answers": [
+            {
+              "AnswerText": "Yes",
+              "AnswerValue": "1"
+            },
+            {
+              "AnswerText": "No",
+              "AnswerValue": "2"
+            }
+          ],
+          "LinkedToQuestionId": null,
+          "LinkedToRosterId": null,
+          "PublicKey": "32160096-c9e5-93e8-c4e8-6548e92db4e6",
+          "Children": [],
+          "ValidationConditions": [],
+          "Instructions": "",
+          "ColumnName": "q3_13"
+        },
+        {
+          "YesNoView": false,
+          "AreAnswersOrdered": false,
+          "IsFilteredCombobox": false,
+          "CategoriesId": null,
+          "MaxAllowedAnswers": null,
+          "QuestionType": 3,
+          "Featured": false,
+          "VariableName": "q3_14",
+          "VariableLabel": "",
+          "QuestionText": "3.14. What device do you use to access the internet?",
+          "Answers": [
+            {
+              "AnswerText": "1. Smartphone",
+              "AnswerValue": "1"
+            },
+            {
+              "AnswerText": "2. Desktop computer",
+              "AnswerValue": "2"
+            },
+            {
+              "AnswerText": "3. Laptop",
+              "AnswerValue": "3"
+            },
+            {
+              "AnswerText": "4. Notebook, Tablet etc",
+              "AnswerValue": "4"
+            },
+            {
+              "AnswerText": "5. Other (Specify)",
+              "AnswerValue": "5"
+            }
+          ],
+          "LinkedToQuestionId": null,
+          "LinkedToRosterId": null,
+          "PublicKey": "1cf03ac2-3590-7bbc-bacd-ad33566ec627",
+          "Children": [],
+          "ValidationConditions": [],
+          "Instructions": "",
+          "ColumnName": "q3_14"
+        },
+        {
+          "QuestionType": 7,
+          "Featured": false,
+          "VariableName": "q3_14S",
+          "VariableLabel": "",
+          "QuestionText": "3.14S. Please specify other",
+          "Answers": [],
+          "LinkedToQuestionId": null,
+          "LinkedToRosterId": null,
+          "PublicKey": "6abca7d1-267b-cc03-bc29-e9e01c519994",
+          "Children": [],
+          "ValidationConditions": [],
+          "Instructions": "",
+          "ColumnName": "q3_14s"
+        },
+        {
+          "CategoriesId": null,
+          "QuestionType": 0,
+          "Featured": false,
+          "VariableName": "q3_15",
+          "VariableLabel": "",
+          "QuestionText": "3.15. Does this facility has a website for the business?",
+          "Answers": [
+            {
+              "AnswerText": "Yes",
+              "AnswerValue": "1"
+            },
+            {
+              "AnswerText": "No",
+              "AnswerValue": "2"
+            }
+          ],
+          "LinkedToQuestionId": null,
+          "LinkedToRosterId": null,
+          "PublicKey": "3327a6e6-03a8-3980-413c-5d63c057a69f",
+          "Children": [],
+          "ValidationConditions": [],
+          "Instructions": "",
+          "ColumnName": "q3_15"
+        },
+        {
+          "YesNoView": false,
+          "AreAnswersOrdered": false,
+          "IsFilteredCombobox": false,
+          "CategoriesId": null,
+          "MaxAllowedAnswers": null,
+          "QuestionType": 3,
+          "Featured": false,
+          "VariableName": "q3_16",
+          "VariableLabel": "",
+          "QuestionText": "3.16 What is the main purpose of the website?",
+          "Answers": [
+            {
+              "AnswerText": "1. To market the services of the business",
+              "AnswerValue": "1"
+            },
+            {
+              "AnswerText": "2.To provide bookings and reservations",
+              "AnswerValue": "2"
+            },
+            {
+              "AnswerText": "3. To provide information on the business",
+              "AnswerValue": "3"
+            },
+            {
+              "AnswerText": "4. Other (Specify)",
+              "AnswerValue": "4"
+            }
+          ],
+          "LinkedToQuestionId": null,
+          "LinkedToRosterId": null,
+          "PublicKey": "4795c01e-64be-5e3c-bec9-f560d875d38c",
+          "Children": [],
+          "ValidationConditions": [],
+          "Instructions": "DO NOT READ OPTIONS",
+          "ColumnName": "q3_16"
+        },
+        {
+          "QuestionType": 7,
+          "Featured": false,
+          "VariableName": "q3_16S",
+          "VariableLabel": "",
+          "QuestionText": "3.16S. Please specify other",
+          "Answers": [],
+          "LinkedToQuestionId": null,
+          "LinkedToRosterId": null,
+          "PublicKey": "5651fcb6-2c9e-cbd4-0631-bc98cffd72bd",
+          "Children": [],
+          "ValidationConditions": [],
+          "Instructions": "",
+          "ColumnName": "q3_16s"
+        },
+        {
+          "CategoriesId": null,
+          "QuestionType": 0,
+          "Featured": false,
+          "VariableName": "q3_17",
+          "VariableLabel": "",
+          "QuestionText": "3.17. What is your experience of the quality of the internet service available to the facility?",
+          "Answers": [
+            {
+              "AnswerText": "1. Very good",
+              "AnswerValue": "1"
+            },
+            {
+              "AnswerText": "2. Good",
+              "AnswerValue": "2"
+            },
+            {
+              "AnswerText": "3. Okay (not good or bad)",
+              "AnswerValue": "3"
+            },
+            {
+              "AnswerText": "4. Bad",
+              "AnswerValue": "4"
+            },
+            {
+              "AnswerText": "5. Very bad",
+              "AnswerValue": "5"
+            }
+          ],
+          "LinkedToQuestionId": null,
+          "LinkedToRosterId": null,
+          "PublicKey": "b80fac41-c9e6-f8ea-7b0f-c558923b6f55",
+          "Children": [],
+          "ValidationConditions": [],
+          "Instructions": "READ OPTIONS",
+          "ColumnName": "q3_17"
+        },
+        {
+          "CategoriesId": null,
+          "QuestionType": 0,
+          "Featured": false,
+          "VariableName": "q3_18",
+          "VariableLabel": "",
+          "QuestionText": "3.18. Do you have an email account for this business?",
+          "Answers": [
+            {
+              "AnswerText": "1. Yes",
+              "AnswerValue": "1"
+            },
+            {
+              "AnswerText": "2. No",
+              "AnswerValue": "2"
+            }
+          ],
+          "LinkedToQuestionId": null,
+          "LinkedToRosterId": null,
+          "PublicKey": "ae243386-404b-6ba0-ecda-7a149c52e5a0",
+          "Children": [],
+          "ValidationConditions": [],
+          "Instructions": "",
+          "ColumnName": "q3_18"
+        },
+        {
+          "CategoriesId": null,
+          "QuestionType": 0,
+          "Featured": false,
+          "VariableName": "q3_19",
+          "VariableLabel": "",
+          "QuestionText": "3.19. What is your experience of the quality of the telephone service offered?",
+          "Answers": [
+            {
+              "AnswerText": "1. Very good",
+              "AnswerValue": "1"
+            },
+            {
+              "AnswerText": "2. Good",
+              "AnswerValue": "2"
+            },
+            {
+              "AnswerText": "3. Okay (not good or bad)",
+              "AnswerValue": "3"
+            },
+            {
+              "AnswerText": "4. Bad",
+              "AnswerValue": "4"
+            },
+            {
+              "AnswerText": "5. Very bad",
+              "AnswerValue": "5"
+            }
+          ],
+          "LinkedToQuestionId": null,
+          "LinkedToRosterId": null,
+          "PublicKey": "cfe4dbb6-8abd-013e-402d-26941cd049c5",
+          "Children": [],
+          "ValidationConditions": [],
+          "Instructions": "READ OPTIONS",
+          "ColumnName": "q3_19"
+        },
+        {
+          "CategoriesId": null,
+          "QuestionType": 0,
+          "Featured": false,
+          "VariableName": "q3_20",
+          "VariableLabel": "",
+          "QuestionText": "3.20. What is your experience of the quality of the mobile service offered?",
+          "Answers": [
+            {
+              "AnswerText": "1. Very good",
+              "AnswerValue": "1"
+            },
+            {
+              "AnswerText": "2. Good",
+              "AnswerValue": "2"
+            },
+            {
+              "AnswerText": "3. Okay (not good or bad)",
+              "AnswerValue": "3"
+            },
+            {
+              "AnswerText": "4. Bad",
+              "AnswerValue": "4"
+            },
+            {
+              "AnswerText": "5. Very bad",
+              "AnswerValue": "5"
+            }
+          ],
+          "LinkedToQuestionId": null,
+          "LinkedToRosterId": null,
+          "PublicKey": "f323414b-eaf4-3582-c38f-fa70d537ad9f",
+          "Children": [],
+          "ValidationConditions": [],
+          "Instructions": "READ OPTIONS",
+          "ColumnName": "q3_20"
+        },
+        {
+          "PublicKey": "25e17102-8b6b-ffb1-96d6-3dade50ab17d",
+          "Children": [],
+          "Type": 1,
+          "Name": "unanswered_bCharacteristics",
+          "Label": "",
+          "Expression": "NumberUnansweredQuestions(bCharacteristics)",
+          "DoNotExport": true,
+          "ColumnName": "unanswered_bcharacteristics",
+          "IsExportable": false
+        },
+        {
+          "PublicKey": "df317b22-2f73-18db-72a4-90939dbb344d",
+          "Children": [],
+          "ValidationConditions": [],
+          "ColumnName": "df317b22-2f73-18db-72a4-90939dbb344d"
+        }
+      ],
+      "HasAnyExportableChild": true,
+      "TableName": "XGeYtfNsAkC9mEoHbaH99g$2",
+      "EnablementTableName": "XGeYtfNsAkC9mEoHbaH99g$2-e",
+      "ValidityTableName": "XGeYtfNsAkC9mEoHbaH99g$2-v",
+      "DoesSupportDataTable": true,
+      "DoesSupportEnablementTable": true,
+      "DoesSupportValidityTable": true,
+      "IsInsideRoster": false,
+      "ColumnName": "bcharacteristics"
+    },
+    {
+      "IsRoster": false,
+      "RosterSizeQuestionId": null,
+      "RosterSizeSource": 0,
+      "IsFixedRoster": false,
+      "FixedRosterTitles": [],
+      "VariableName": "transportation",
+      "Title": "SECTION 4 - TRANSPORTATION",
+      "RosterTitleQuestionId": null,
+      "PublicKey": "575760ad-d68c-b6c7-8de3-c6215d8781cd",
+      "Children": [
+        {
+          "PublicKey": "2fb1bdfd-0685-389a-dff3-45325efd7989",
+          "Children": [],
+          "ValidationConditions": [],
+          "ColumnName": "2fb1bdfd-0685-389a-dff3-45325efd7989"
+        },
+        {
+          "CategoriesId": null,
+          "QuestionType": 0,
+          "Featured": false,
+          "VariableName": "q4_01",
+          "VariableLabel": "",
+          "QuestionText": "4.01. What mode of transportation is used most frequently by your guests?",
+          "Answers": [
+            {
+              "AnswerText": "1. Car Rental",
+              "AnswerValue": "1"
+            },
+            {
+              "AnswerText": "2. Bus services",
+              "AnswerValue": "2"
+            },
+            {
+              "AnswerText": "3. Inbound Tour Operators",
+              "AnswerValue": "3"
+            },
+            {
+              "AnswerText": "4. Special Charter",
+              "AnswerValue": "4"
+            },
+            {
+              "AnswerText": "5. Taxi Services",
+              "AnswerValue": "5"
+            },
+            {
+              "AnswerText": "6. Motorcycle Rental",
+              "AnswerValue": "6"
+            },
+            {
+              "AnswerText": "7. Public Transportation",
+              "AnswerValue": "7"
+            },
+            {
+              "AnswerText": "8. Other (Specify)",
+              "AnswerValue": "8"
+            }
+          ],
+          "LinkedToQuestionId": null,
+          "LinkedToRosterId": null,
+          "PublicKey": "50b42298-7703-1000-9b06-36f196c5cd16",
+          "Children": [],
+          "ValidationConditions": [],
+          "Instructions": "READ OPTIONS",
+          "ColumnName": "q4_01"
+        },
+        {
+          "QuestionType": 7,
+          "Featured": false,
+          "VariableName": "q4_01S",
+          "VariableLabel": "",
+          "QuestionText": "4.01S. Please specify other",
+          "Answers": [],
+          "LinkedToQuestionId": null,
+          "LinkedToRosterId": null,
+          "PublicKey": "7eeac7f4-5a94-5ef6-e874-a379a853be3d",
+          "Children": [],
+          "ValidationConditions": [],
+          "Instructions": "",
+          "ColumnName": "q4_01s"
+        },
+        {
+          "CategoriesId": null,
+          "QuestionType": 0,
+          "Featured": false,
+          "VariableName": "q4_02",
+          "VariableLabel": "",
+          "QuestionText": "4.02. Are you satisfied with the road signs that direct vistors to this facility/property?",
+          "Answers": [
+            {
+              "AnswerText": "1. Very Satisfied",
+              "AnswerValue": "1"
+            },
+            {
+              "AnswerText": "2. Satisfied",
+              "AnswerValue": "2"
+            },
+            {
+              "AnswerText": "3. Neither satisfied nor dissatisfied",
+              "AnswerValue": "3"
+            },
+            {
+              "AnswerText": "4. Dissatisfied",
+              "AnswerValue": "4"
+            },
+            {
+              "AnswerText": "5. Very dissatisfied",
+              "AnswerValue": "5"
+            }
+          ],
+          "LinkedToQuestionId": null,
+          "LinkedToRosterId": null,
+          "PublicKey": "316aa77e-6e6a-a327-ed14-092507e84c2c",
+          "Children": [],
+          "ValidationConditions": [],
+          "Instructions": "",
+          "ColumnName": "q4_02"
+        },
+        {
+          "CategoriesId": null,
+          "QuestionType": 0,
+          "Featured": false,
+          "VariableName": "q4_03",
+          "VariableLabel": "",
+          "QuestionText": "4.03. Are you satisfied with the condition of the roads leading in this property?",
+          "Answers": [
+            {
+              "AnswerText": "1. Very Satisfied",
+              "AnswerValue": "1"
+            },
+            {
+              "AnswerText": "2. Satisfied",
+              "AnswerValue": "2"
+            },
+            {
+              "AnswerText": "3. Neither satisfied nor dissatisfied",
+              "AnswerValue": "3"
+            },
+            {
+              "AnswerText": "4. Dissatisfied",
+              "AnswerValue": "4"
+            },
+            {
+              "AnswerText": "5. Very dissatisfied",
+              "AnswerValue": "5"
+            }
+          ],
+          "LinkedToQuestionId": null,
+          "LinkedToRosterId": null,
+          "PublicKey": "6c2c8715-e839-8f14-587c-5455cac05b18",
+          "Children": [],
+          "ValidationConditions": [],
+          "Instructions": "",
+          "ColumnName": "q4_03"
+        },
+        {
+          "CategoriesId": null,
+          "QuestionType": 0,
+          "Featured": false,
+          "VariableName": "q4_04",
+          "VariableLabel": "",
+          "QuestionText": "4.04. Are you satisfied with the cleanliness of the streets within this environment?",
+          "Answers": [
+            {
+              "AnswerText": "1. Very Satisfied",
+              "AnswerValue": "1"
+            },
+            {
+              "AnswerText": "2. Satisfied",
+              "AnswerValue": "2"
+            },
+            {
+              "AnswerText": "3. Neither satisfied nor dissatisfied",
+              "AnswerValue": "3"
+            },
+            {
+              "AnswerText": "4. Dissatisfied",
+              "AnswerValue": "4"
+            },
+            {
+              "AnswerText": "5. Very dissatisfied",
+              "AnswerValue": "5"
+            }
+          ],
+          "LinkedToQuestionId": null,
+          "LinkedToRosterId": null,
+          "PublicKey": "4018f921-36fc-5171-5d51-7cd8e5f4d557",
+          "Children": [],
+          "ValidationConditions": [],
+          "Instructions": "",
+          "ColumnName": "q4_04"
+        },
+        {
+          "CategoriesId": null,
+          "QuestionType": 0,
+          "Featured": false,
+          "VariableName": "q4_05",
+          "VariableLabel": "",
+          "QuestionText": "4.05. Are you satisfied with the general safety of the transport services associated with this facility?",
+          "Answers": [
+            {
+              "AnswerText": "1. Very Satisfied",
+              "AnswerValue": "1"
+            },
+            {
+              "AnswerText": "2. Satisfied",
+              "AnswerValue": "2"
+            },
+            {
+              "AnswerText": "3. Neither satisfied nor dissatisfied",
+              "AnswerValue": "3"
+            },
+            {
+              "AnswerText": "4. Dissatisfied",
+              "AnswerValue": "4"
+            },
+            {
+              "AnswerText": "5. Very dissatisfied",
+              "AnswerValue": "5"
+            }
+          ],
+          "LinkedToQuestionId": null,
+          "LinkedToRosterId": null,
+          "PublicKey": "6aeb38a6-15c1-24b8-056a-120f8038b921",
+          "Children": [],
+          "ValidationConditions": [],
+          "Instructions": "",
+          "ColumnName": "q4_05"
+        },
+        {
+          "CategoriesId": null,
+          "QuestionType": 0,
+          "Featured": false,
+          "VariableName": "q4_06",
+          "VariableLabel": "",
+          "QuestionText": "4.06. Are you satisfied with the general efficiency of the transport system associated with this facility?",
+          "Answers": [
+            {
+              "AnswerText": "1. Very Satisfied",
+              "AnswerValue": "1"
+            },
+            {
+              "AnswerText": "2. Satisfied",
+              "AnswerValue": "2"
+            },
+            {
+              "AnswerText": "3. Neither satisfied nor dissatisfied",
+              "AnswerValue": "3"
+            },
+            {
+              "AnswerText": "4. Dissatisfied",
+              "AnswerValue": "4"
+            },
+            {
+              "AnswerText": "5. Very dissatisfied",
+              "AnswerValue": "5"
+            }
+          ],
+          "LinkedToQuestionId": null,
+          "LinkedToRosterId": null,
+          "PublicKey": "850ebf59-b193-b73c-6641-71096729aa39",
+          "Children": [],
+          "ValidationConditions": [],
+          "Instructions": "",
+          "ColumnName": "q4_06"
+        },
+        {
+          "CategoriesId": null,
+          "QuestionType": 0,
+          "Featured": false,
+          "VariableName": "q4_07",
+          "VariableLabel": "",
+          "QuestionText": "4.07. Do you think the conditions of the roads influence the time taken for visitors to reach their destination?",
+          "Answers": [
+            {
+              "AnswerText": "Yes",
+              "AnswerValue": "1"
+            },
+            {
+              "AnswerText": "No",
+              "AnswerValue": "2"
+            }
+          ],
+          "LinkedToQuestionId": null,
+          "LinkedToRosterId": null,
+          "PublicKey": "6d871081-5739-e962-d328-ef4959701717",
+          "Children": [],
+          "ValidationConditions": [],
+          "Instructions": "",
+          "ColumnName": "q4_07"
+        },
+        {
+          "CategoriesId": null,
+          "QuestionType": 0,
+          "Featured": false,
+          "VariableName": "q4_08",
+          "VariableLabel": "",
+          "QuestionText": "4.08. Do you think the conditions of the roads affects the number of visitors/guests you receive on an annual basis?",
+          "Answers": [
+            {
+              "AnswerText": "Yes",
+              "AnswerValue": "1"
+            },
+            {
+              "AnswerText": "No",
+              "AnswerValue": "2"
+            }
+          ],
+          "LinkedToQuestionId": null,
+          "LinkedToRosterId": null,
+          "PublicKey": "352d628f-5529-548c-23f1-ce6956c972e7",
+          "Children": [],
+          "ValidationConditions": [],
+          "Instructions": "",
+          "ColumnName": "q4_08"
+        },
+        {
+          "CategoriesId": null,
+          "QuestionType": 0,
+          "Featured": false,
+          "VariableName": "q4_09",
+          "VariableLabel": "",
+          "QuestionText": "4.09. Can guests connect with other modes of transportation (<font color=\"blue\">Taxis, charters </font>) or information (<font color=\"blue\">visitor's Centre, Tour Guides</font>) easily from this facility?",
+          "Answers": [
+            {
+              "AnswerText": "Yes",
+              "AnswerValue": "1"
+            },
+            {
+              "AnswerText": "No",
+              "AnswerValue": "2"
+            }
+          ],
+          "LinkedToQuestionId": null,
+          "LinkedToRosterId": null,
+          "PublicKey": "e6dd6e49-d8f6-7c4c-34a6-87bdb00e2721",
+          "Children": [],
+          "ValidationConditions": [],
+          "Instructions": "",
+          "ColumnName": "q4_09"
+        },
+        {
+          "CategoriesId": null,
+          "QuestionType": 0,
+          "Featured": false,
+          "VariableName": "q4_10",
+          "VariableLabel": "",
+          "QuestionText": "4.10. In your opinion can the highways and roads handle more traffic to your facility?",
+          "Answers": [
+            {
+              "AnswerText": "Yes",
+              "AnswerValue": "1"
+            },
+            {
+              "AnswerText": "No",
+              "AnswerValue": "2"
+            }
+          ],
+          "LinkedToQuestionId": null,
+          "LinkedToRosterId": null,
+          "PublicKey": "42efdb4a-60d6-d2a9-2f9e-a4ad3dbd4d51",
+          "Children": [],
+          "ValidationConditions": [],
+          "Instructions": "",
+          "ColumnName": "q4_10"
+        },
+        {
+          "PublicKey": "4e3e85be-fe8c-d857-a84f-6a4875c4e277",
+          "Children": [],
+          "Type": 1,
+          "Name": "unanswered_transportation",
+          "Label": "",
+          "Expression": "NumberUnansweredQuestions(transportation)",
+          "DoNotExport": true,
+          "ColumnName": "unanswered_transportation",
+          "IsExportable": false
+        },
+        {
+          "PublicKey": "c73992bb-536a-2561-7abd-de17d44dc680",
+          "Children": [],
+          "ValidationConditions": [],
+          "ColumnName": "c73992bb-536a-2561-7abd-de17d44dc680"
+        }
+      ],
+      "HasAnyExportableChild": true,
+      "TableName": "XGeYtfNsAkC9mEoHbaH99g$2",
+      "EnablementTableName": "XGeYtfNsAkC9mEoHbaH99g$2-e",
+      "ValidityTableName": "XGeYtfNsAkC9mEoHbaH99g$2-v",
+      "DoesSupportDataTable": true,
+      "DoesSupportEnablementTable": true,
+      "DoesSupportValidityTable": true,
+      "IsInsideRoster": false,
+      "ColumnName": "transportation"
+    },
+    {
+      "IsRoster": false,
+      "RosterSizeQuestionId": null,
+      "RosterSizeSource": 0,
+      "IsFixedRoster": false,
+      "FixedRosterTitles": [],
+      "VariableName": "UemergencyServices",
+      "Title": "SECTION 5 - UTILITIES AND EMERGENCY SERVICES",
+      "RosterTitleQuestionId": null,
+      "PublicKey": "dd15a105-d372-663c-d0f5-3dbe184dc263",
+      "Children": [
+        {
+          "PublicKey": "dd664a1d-d624-404b-b434-1a4035cc14d6",
+          "Children": [],
+          "ValidationConditions": [],
+          "ColumnName": "dd664a1d-d624-404b-b434-1a4035cc14d6"
+        },
+        {
+          "CategoriesId": null,
+          "QuestionType": 0,
+          "Featured": false,
+          "VariableName": "q5_01",
+          "VariableLabel": "",
+          "QuestionText": "5.01. What is the main source of water used by this facility?",
+          "Answers": [
+            {
+              "AnswerText": "1. Water piped into facility (NWC)",
+              "AnswerValue": "1"
+            },
+            {
+              "AnswerText": "2. Public Stand Pipe",
+              "AnswerValue": "2"
+            },
+            {
+              "AnswerText": "3. Water from spring",
+              "AnswerValue": "3"
+            },
+            {
+              "AnswerText": "4. Rainwater Collection",
+              "AnswerValue": "4"
+            },
+            {
+              "AnswerText": "5. Surface water (River, stream, pond etc)",
+              "AnswerValue": "5"
+            },
+            {
+              "AnswerText": "6. Other (specify)",
+              "AnswerValue": "6"
+            }
+          ],
+          "LinkedToQuestionId": null,
+          "LinkedToRosterId": null,
+          "PublicKey": "c9f22ded-2736-cdcf-2a43-adced314c235",
+          "Children": [],
+          "ValidationConditions": [],
+          "Instructions": "READ OPTIONS",
+          "ColumnName": "q5_01"
+        },
+        {
+          "QuestionType": 7,
+          "Featured": false,
+          "VariableName": "q5_01S",
+          "VariableLabel": "",
+          "QuestionText": "5.01S. Please specify other",
+          "Answers": [],
+          "LinkedToQuestionId": null,
+          "LinkedToRosterId": null,
+          "PublicKey": "e9230a13-7e2c-1a68-f87a-66cc4ad38807",
+          "Children": [],
+          "ValidationConditions": [],
+          "Instructions": "",
+          "ColumnName": "q5_01s"
+        },
+        {
+          "CategoriesId": null,
+          "QuestionType": 0,
+          "Featured": false,
+          "VariableName": "q5_05",
+          "VariableLabel": "",
+          "QuestionText": "5.02. Is the quality of the local supply of water (taste, colour and smell) acceptable for drinking and cooking?",
+          "Answers": [
+            {
+              "AnswerText": "Yes",
+              "AnswerValue": "1"
+            },
+            {
+              "AnswerText": "No",
+              "AnswerValue": "2"
+            }
+          ],
+          "LinkedToQuestionId": null,
+          "LinkedToRosterId": null,
+          "PublicKey": "698efad3-4a4f-4b6d-a473-38854a867083",
+          "Children": [],
+          "ValidationConditions": [],
+          "Instructions": "",
+          "ColumnName": "q5_05"
+        },
+        {
+          "CategoriesId": null,
+          "QuestionType": 0,
+          "Featured": false,
+          "VariableName": "q5_03",
+          "VariableLabel": "",
+          "QuestionText": "5.03. Does this facility suffers from a water shortage?",
+          "Answers": [
+            {
+              "AnswerText": "1. Yes, occasionally",
+              "AnswerValue": "1"
+            },
+            {
+              "AnswerText": "2. Yes, frequently",
+              "AnswerValue": "2"
+            },
+            {
+              "AnswerText": "3. No",
+              "AnswerValue": "3"
+            }
+          ],
+          "LinkedToQuestionId": null,
+          "LinkedToRosterId": null,
+          "PublicKey": "74daa8bc-ba0f-a70d-31b7-05231b85e428",
+          "Children": [],
+          "ValidationConditions": [],
+          "Instructions": "READ OPTIONS",
+          "ColumnName": "q5_03"
+        },
+        {
+          "CategoriesId": null,
+          "QuestionType": 0,
+          "Featured": false,
+          "VariableName": "q5_04",
+          "VariableLabel": "",
+          "QuestionText": "5.04. What is the main source of electricity for this facility?",
+          "Answers": [
+            {
+              "AnswerText": "1. Electricity provided by JPS",
+              "AnswerValue": "1"
+            },
+            {
+              "AnswerText": "2. Solar energy",
+              "AnswerValue": "2"
+            },
+            {
+              "AnswerText": "3. Wind",
+              "AnswerValue": "3"
+            },
+            {
+              "AnswerText": "4. Other source (Specify)",
+              "AnswerValue": "4"
+            }
+          ],
+          "LinkedToQuestionId": null,
+          "LinkedToRosterId": null,
+          "PublicKey": "fc49ee9d-224a-ea8e-32e7-e3401a30504d",
+          "Children": [],
+          "ValidationConditions": [],
+          "Instructions": "READ OPTIONS",
+          "ColumnName": "q5_04"
+        },
+        {
+          "CategoriesId": null,
+          "QuestionType": 0,
+          "Featured": false,
+          "VariableName": "Q5_5",
+          "VariableLabel": "",
+          "QuestionText": "5.05. Is the source of electricity reliable?",
+          "Answers": [
+            {
+              "AnswerText": "1. Yes",
+              "AnswerValue": "1"
+            },
+            {
+              "AnswerText": "2. No",
+              "AnswerValue": "2"
+            }
+          ],
+          "LinkedToQuestionId": null,
+          "LinkedToRosterId": null,
+          "PublicKey": "42f5bd4e-57cf-0b50-ca69-c5bcaa5d091c",
+          "Children": [],
+          "ValidationConditions": [],
+          "Instructions": "",
+          "ColumnName": "q5_5"
+        },
+        {
+          "CategoriesId": null,
+          "QuestionType": 0,
+          "Featured": false,
+          "VariableName": "q5_06",
+          "VariableLabel": "",
+          "QuestionText": "5.06. Are there sufficient street lights in the area?",
+          "Answers": [
+            {
+              "AnswerText": "Yes",
+              "AnswerValue": "1"
+            },
+            {
+              "AnswerText": "No",
+              "AnswerValue": "2"
+            }
+          ],
+          "LinkedToQuestionId": null,
+          "LinkedToRosterId": null,
+          "PublicKey": "c5809c70-2b03-a9db-1d79-b09f0c02f2ba",
+          "Children": [],
+          "ValidationConditions": [],
+          "Instructions": "",
+          "ColumnName": "q5_06"
+        },
+        {
+          "PublicKey": "38f15294-bdff-9421-7890-2342a0d72c9f",
+          "Children": [],
+          "ValidationConditions": [],
+          "ColumnName": "38f15294-bdff-9421-7890-2342a0d72c9f"
+        },
+        {
+          "CategoriesId": null,
+          "QuestionType": 0,
+          "Featured": false,
+          "VariableName": "q5_07",
+          "VariableLabel": "",
+          "QuestionText": "5.07. Is there an emergency health centre at this facility?",
+          "Answers": [
+            {
+              "AnswerText": "Yes",
+              "AnswerValue": "1"
+            },
+            {
+              "AnswerText": "No",
+              "AnswerValue": "2"
+            }
+          ],
+          "LinkedToQuestionId": null,
+          "LinkedToRosterId": null,
+          "PublicKey": "00eb6acb-7e6c-dfae-5252-facead77bee7",
+          "Children": [],
+          "ValidationConditions": [],
+          "Instructions": "",
+          "ColumnName": "q5_07"
+        },
+        {
+          "CategoriesId": null,
+          "QuestionType": 0,
+          "Featured": false,
+          "VariableName": "q5_08",
+          "VariableLabel": "",
+          "QuestionText": "5.08. Is there an emergency health centre in this area?",
+          "Answers": [
+            {
+              "AnswerText": "Yes",
+              "AnswerValue": "1"
+            },
+            {
+              "AnswerText": "No",
+              "AnswerValue": "2"
+            }
+          ],
+          "LinkedToQuestionId": null,
+          "LinkedToRosterId": null,
+          "PublicKey": "bb475e6d-7d9f-7f45-c9af-cb3a58472c29",
+          "Children": [],
+          "ValidationConditions": [],
+          "Instructions": "",
+          "ColumnName": "q5_08"
+        },
+        {
+          "IsInteger": true,
+          "QuestionType": 4,
+          "Featured": false,
+          "VariableName": "q5_09",
+          "VariableLabel": "",
+          "QuestionText": "5.9. How far away is the nearest health centre from this facility?",
+          "Answers": [
+            {
+              "AnswerText": "Don't Know",
+              "AnswerValue": "999"
+            }
+          ],
+          "LinkedToQuestionId": null,
+          "LinkedToRosterId": null,
+          "PublicKey": "6eb912ad-7cbb-786f-c0f6-5e8d98591f65",
+          "Children": [],
+          "ValidationConditions": [],
+          "Instructions": "",
+          "ColumnName": "q5_09"
+        },
+        {
+          "CategoriesId": null,
+          "QuestionType": 0,
+          "Featured": false,
+          "VariableName": "q5_09a",
+          "VariableLabel": "",
+          "QuestionText": "5.9a. Distance unit of measurement",
+          "Answers": [
+            {
+              "AnswerText": "Miles",
+              "AnswerValue": "1"
+            },
+            {
+              "AnswerText": "Kilometers",
+              "AnswerValue": "2"
+            }
+          ],
+          "LinkedToQuestionId": null,
+          "LinkedToRosterId": null,
+          "PublicKey": "0caf6fe4-43b0-69b9-8b9a-7ddd4a8e6bcb",
+          "Children": [],
+          "ValidationConditions": [],
+          "Instructions": "",
+          "ColumnName": "q5_09a"
+        },
+        {
+          "CategoriesId": null,
+          "QuestionType": 0,
+          "Featured": false,
+          "VariableName": "q5_10",
+          "VariableLabel": "",
+          "QuestionText": "5.10. Is there an ambulance service available in this area?",
+          "Answers": [
+            {
+              "AnswerText": "Yes",
+              "AnswerValue": "1"
+            },
+            {
+              "AnswerText": "No",
+              "AnswerValue": "2"
+            }
+          ],
+          "LinkedToQuestionId": null,
+          "LinkedToRosterId": null,
+          "PublicKey": "b981a86e-76c9-21e5-2879-ce7cd8afdaa0",
+          "Children": [],
+          "ValidationConditions": [],
+          "Instructions": "",
+          "ColumnName": "q5_10"
+        },
+        {
+          "IsInteger": true,
+          "QuestionType": 4,
+          "Featured": false,
+          "VariableName": "q5_11",
+          "VariableLabel": "",
+          "QuestionText": "5.11. How far away is the nearest ambulance service?",
+          "Answers": [
+            {
+              "AnswerText": "Don't Know",
+              "AnswerValue": "999"
+            }
+          ],
+          "LinkedToQuestionId": null,
+          "LinkedToRosterId": null,
+          "PublicKey": "a9537044-0486-fd0d-6a40-8989254e1f0f",
+          "Children": [],
+          "ValidationConditions": [],
+          "Instructions": "",
+          "ColumnName": "q5_11"
+        },
+        {
+          "CategoriesId": null,
+          "QuestionType": 0,
+          "Featured": false,
+          "VariableName": "q5_11a",
+          "VariableLabel": "",
+          "QuestionText": "5.11a. Distance unit of measurement",
+          "Answers": [
+            {
+              "AnswerText": "Miles",
+              "AnswerValue": "1"
+            },
+            {
+              "AnswerText": "Kilometers",
+              "AnswerValue": "2"
+            }
+          ],
+          "LinkedToQuestionId": null,
+          "LinkedToRosterId": null,
+          "PublicKey": "364b48fd-edf7-4a56-36b0-1101b64f955d",
+          "Children": [],
+          "ValidationConditions": [],
+          "Instructions": "",
+          "ColumnName": "q5_11a"
+        },
+        {
+          "IsInteger": true,
+          "QuestionType": 4,
+          "Featured": false,
+          "VariableName": "q5_12",
+          "VariableLabel": "",
+          "QuestionText": "5.12. How far away is the nearest fire station?",
+          "Answers": [
+            {
+              "AnswerText": "Don't Know",
+              "AnswerValue": "999"
+            }
+          ],
+          "LinkedToQuestionId": null,
+          "LinkedToRosterId": null,
+          "PublicKey": "7f857786-257f-19d4-3abc-db414853c70d",
+          "Children": [],
+          "ValidationConditions": [],
+          "Instructions": "",
+          "ColumnName": "q5_12"
+        },
+        {
+          "CategoriesId": null,
+          "QuestionType": 0,
+          "Featured": false,
+          "VariableName": "q5_12a",
+          "VariableLabel": "",
+          "QuestionText": "5.12a. Distance unit of measurement",
+          "Answers": [
+            {
+              "AnswerText": "Miles",
+              "AnswerValue": "1"
+            },
+            {
+              "AnswerText": "Kilometers",
+              "AnswerValue": "2"
+            }
+          ],
+          "LinkedToQuestionId": null,
+          "LinkedToRosterId": null,
+          "PublicKey": "7a99dc38-3f6c-e1af-12c0-3ac39313bd0a",
+          "Children": [],
+          "ValidationConditions": [],
+          "Instructions": "",
+          "ColumnName": "q5_12a"
+        },
+        {
+          "CategoriesId": null,
+          "QuestionType": 0,
+          "Featured": false,
+          "VariableName": "Q5_13",
+          "VariableLabel": "",
+          "QuestionText": "5.13. Do you have security personnel protecting the guests and property of this facility 24 hours a day?",
+          "Answers": [
+            {
+              "AnswerText": "Yes",
+              "AnswerValue": "1"
+            },
+            {
+              "AnswerText": "No",
+              "AnswerValue": "2"
+            }
+          ],
+          "LinkedToQuestionId": null,
+          "LinkedToRosterId": null,
+          "PublicKey": "671cb970-3e0b-9c7c-b4e4-d1841b083f8b",
+          "Children": [],
+          "ValidationConditions": [],
+          "Instructions": "",
+          "ColumnName": "q5_13"
+        },
+        {
+          "CategoriesId": null,
+          "QuestionType": 0,
+          "Featured": false,
+          "VariableName": "q5_14",
+          "VariableLabel": "",
+          "QuestionText": "5.14.  Is there a Police Station in this area?",
+          "Answers": [
+            {
+              "AnswerText": "Yes",
+              "AnswerValue": "1"
+            },
+            {
+              "AnswerText": "No",
+              "AnswerValue": "2"
+            }
+          ],
+          "LinkedToQuestionId": null,
+          "LinkedToRosterId": null,
+          "PublicKey": "9b24e0b1-1a0b-3fac-8b31-25ad24bb7826",
+          "Children": [],
+          "ValidationConditions": [],
+          "Instructions": "",
+          "ColumnName": "q5_14"
+        },
+        {
+          "IsInteger": true,
+          "QuestionType": 4,
+          "Featured": false,
+          "VariableName": "q5_15",
+          "VariableLabel": "",
+          "QuestionText": "5.15. How far away is the nearest Police Station?",
+          "Answers": [
+            {
+              "AnswerText": "Don't Know",
+              "AnswerValue": "999"
+            }
+          ],
+          "LinkedToQuestionId": null,
+          "LinkedToRosterId": null,
+          "PublicKey": "d4c8f7e2-0070-d324-90d9-abe7eedfba8d",
+          "Children": [],
+          "ValidationConditions": [],
+          "Instructions": "",
+          "ColumnName": "q5_15"
+        },
+        {
+          "CategoriesId": null,
+          "QuestionType": 0,
+          "Featured": false,
+          "VariableName": "q5_15a",
+          "VariableLabel": "",
+          "QuestionText": "5.15a. Distance unit of measurement",
+          "Answers": [
+            {
+              "AnswerText": "Miles",
+              "AnswerValue": "1"
+            },
+            {
+              "AnswerText": "Kilometers",
+              "AnswerValue": "2"
+            }
+          ],
+          "LinkedToQuestionId": null,
+          "LinkedToRosterId": null,
+          "PublicKey": "5c426082-22a0-a6ba-dcfa-e45cb05c6f8d",
+          "Children": [],
+          "ValidationConditions": [],
+          "Instructions": "",
+          "ColumnName": "q5_15a"
+        },
+        {
+          "CategoriesId": null,
+          "QuestionType": 0,
+          "Featured": false,
+          "VariableName": "q5_16",
+          "VariableLabel": "",
+          "QuestionText": "5.16. Does the Police patrol this area regularly?",
+          "Answers": [
+            {
+              "AnswerText": "Yes",
+              "AnswerValue": "1"
+            },
+            {
+              "AnswerText": "No",
+              "AnswerValue": "2"
+            }
+          ],
+          "LinkedToQuestionId": null,
+          "LinkedToRosterId": null,
+          "PublicKey": "e9491bff-f5a5-4d1c-0237-473f431dd7fe",
+          "Children": [],
+          "ValidationConditions": [],
+          "Instructions": "",
+          "ColumnName": "q5_16"
+        },
+        {
+          "YesNoView": true,
+          "AreAnswersOrdered": false,
+          "IsFilteredCombobox": false,
+          "CategoriesId": null,
+          "MaxAllowedAnswers": null,
+          "QuestionType": 3,
+          "Featured": false,
+          "VariableName": "q5_17",
+          "VariableLabel": "",
+          "QuestionText": "5.17. Is there a disaster management plan for any of the following disasters at this facility?",
+          "Answers": [
+            {
+              "AnswerText": "Hurricane",
+              "AnswerValue": "1"
+            },
+            {
+              "AnswerText": "Flood",
+              "AnswerValue": "2"
+            },
+            {
+              "AnswerText": "Land slide",
+              "AnswerValue": "3"
+            },
+            {
+              "AnswerText": "Earthquake",
+              "AnswerValue": "4"
+            },
+            {
+              "AnswerText": "Pandemics",
+              "AnswerValue": "5"
+            }
+          ],
+          "LinkedToQuestionId": null,
+          "LinkedToRosterId": null,
+          "PublicKey": "d84ac85d-e0af-67a9-45ae-9f9a161672a9",
+          "Children": [],
+          "ValidationConditions": [],
+          "Instructions": "SELECT ALL THAT APPLIES",
+          "ColumnName": "q5_17"
+        },
+        {
+          "YesNoView": false,
+          "AreAnswersOrdered": false,
+          "IsFilteredCombobox": false,
+          "CategoriesId": null,
+          "MaxAllowedAnswers": null,
+          "QuestionType": 3,
+          "Featured": false,
+          "VariableName": "q5_18",
+          "VariableLabel": "",
+          "QuestionText": "5.18. What are the main hazards that affect your businesses?",
+          "Answers": [
+            {
+              "AnswerText": "1. Hurricane",
+              "AnswerValue": "1"
+            },
+            {
+              "AnswerText": "2. Earthquake",
+              "AnswerValue": "2"
+            },
+            {
+              "AnswerText": "3. Flooding due to excessive rainfall",
+              "AnswerValue": "3"
+            },
+            {
+              "AnswerText": "4. Flooding due to storm surges",
+              "AnswerValue": "4"
+            },
+            {
+              "AnswerText": "5. Landslide",
+              "AnswerValue": "5"
+            },
+            {
+              "AnswerText": "6. Long period of drought",
+              "AnswerValue": "6"
+            },
+            {
+              "AnswerText": "7. Fire",
+              "AnswerValue": "7"
+            },
+            {
+              "AnswerText": "8. Other (Specify)",
+              "AnswerValue": "8"
+            },
+            {
+              "AnswerText": "96. Don't Know",
+              "AnswerValue": "96"
+            },
+            {
+              "AnswerText": "99. Not Stated",
+              "AnswerValue": "99"
+            }
+          ],
+          "LinkedToQuestionId": null,
+          "LinkedToRosterId": null,
+          "PublicKey": "0f4ad1f8-ac5c-d637-c70d-c139668e1d0c",
+          "Children": [],
+          "ValidationConditions": [
+            {
+              "Expression": "!(self.ContainsAny(96,99) && self.Length>1)",
+              "Message": "Error! Please varify responses. You CAN NOT have a combination of 'Don’t Know' or 'Not stated' with any other selection.",
+              "Severity": 0
+            }
+          ],
+          "Instructions": "SELECT ALL THAT APPLY",
+          "ColumnName": "q5_18"
+        },
+        {
+          "QuestionType": 7,
+          "Featured": false,
+          "VariableName": "q5_18S",
+          "VariableLabel": "",
+          "QuestionText": "5.18S. Please specify other",
+          "Answers": [],
+          "LinkedToQuestionId": null,
+          "LinkedToRosterId": null,
+          "PublicKey": "78d20048-3211-c004-57bb-8aa7cea17cc7",
+          "Children": [],
+          "ValidationConditions": [],
+          "Instructions": "",
+          "ColumnName": "q5_18s"
+        },
+        {
+          "CategoriesId": null,
+          "QuestionType": 0,
+          "Featured": false,
+          "VariableName": "Q5_19",
+          "VariableLabel": "",
+          "QuestionText": "5.19. How often is you business affected by these hazards",
+          "Answers": [
+            {
+              "AnswerText": "1. Annually",
+              "AnswerValue": "1"
+            },
+            {
+              "AnswerText": "2. Every two years",
+              "AnswerValue": "2"
+            },
+            {
+              "AnswerText": "3. Every 5 years",
+              "AnswerValue": "3"
+            },
+            {
+              "AnswerText": "4. No specific time period (randomly)",
+              "AnswerValue": "4"
+            },
+            {
+              "AnswerText": "5. Other time period",
+              "AnswerValue": "5"
+            },
+            {
+              "AnswerText": "96. Don't know",
+              "AnswerValue": "96"
+            }
+          ],
+          "LinkedToQuestionId": null,
+          "LinkedToRosterId": null,
+          "PublicKey": "caf76d92-6285-e97d-f0b3-39a82e6e43ba",
+          "Children": [],
+          "ValidationConditions": [],
+          "Instructions": "",
+          "ColumnName": "q5_19"
+        },
+        {
+          "YesNoView": false,
+          "AreAnswersOrdered": false,
+          "IsFilteredCombobox": false,
+          "CategoriesId": null,
+          "MaxAllowedAnswers": null,
+          "QuestionType": 3,
+          "Featured": false,
+          "VariableName": "q5_20",
+          "VariableLabel": "",
+          "QuestionText": "5.20. Did you experience during the past 12 months any of the following",
+          "Answers": [
+            {
+              "AnswerText": "1. Hurricane",
+              "AnswerValue": "1"
+            },
+            {
+              "AnswerText": "2. Earthquake",
+              "AnswerValue": "2"
+            },
+            {
+              "AnswerText": "3. Flooding due to excessive rainfall",
+              "AnswerValue": "3"
+            },
+            {
+              "AnswerText": "4. Flooding due to storm surges",
+              "AnswerValue": "4"
+            },
+            {
+              "AnswerText": "5. Landslide",
+              "AnswerValue": "5"
+            },
+            {
+              "AnswerText": "6. Long period of drought",
+              "AnswerValue": "6"
+            },
+            {
+              "AnswerText": "7. Fire Accident",
+              "AnswerValue": "7"
+            },
+            {
+              "AnswerText": "8. Robbery/theft",
+              "AnswerValue": "8"
+            },
+            {
+              "AnswerText": "9. Death of the Head of the Household",
+              "AnswerValue": "9"
+            },
+            {
+              "AnswerText": "10. Death of a family member",
+              "AnswerValue": "10"
+            },
+            {
+              "AnswerText": "11. Other (Specify)",
+              "AnswerValue": "11"
+            },
+            {
+              "AnswerText": "96. Don't Know",
+              "AnswerValue": "96"
+            },
+            {
+              "AnswerText": "99. Not Stated",
+              "AnswerValue": "99"
+            }
+          ],
+          "LinkedToQuestionId": null,
+          "LinkedToRosterId": null,
+          "PublicKey": "4d9c6f0b-2fe8-26a8-fdb1-e15f2c45102e",
+          "Children": [],
+          "ValidationConditions": [
+            {
+              "Expression": "!(self.ContainsAny(96,99) && self.Length>1)",
+              "Message": "Error! Please varify responses. You CAN NOT have a combination of 'Don’t Know', or 'Not stated' with any other selection.",
+              "Severity": 0
+            }
+          ],
+          "Instructions": "SELECT ALL THAT APPLY",
+          "ColumnName": "q5_20"
+        },
+        {
+          "QuestionType": 7,
+          "Featured": false,
+          "VariableName": "q5_20S",
+          "VariableLabel": "",
+          "QuestionText": "5.20S. Please specify other",
+          "Answers": [],
+          "LinkedToQuestionId": null,
+          "LinkedToRosterId": null,
+          "PublicKey": "77655c60-d578-7ff7-bd6c-7651813dfc59",
+          "Children": [],
+          "ValidationConditions": [],
+          "Instructions": "",
+          "ColumnName": "q5_20s"
+        },
+        {
+          "PublicKey": "9f9dab71-93bd-ef02-076b-afa54bf65f28",
+          "Children": [],
+          "Type": 1,
+          "Name": "unanswered_UemergencyServices",
+          "Label": "",
+          "Expression": "NumberUnansweredQuestions(UemergencyServices)",
+          "DoNotExport": true,
+          "ColumnName": "unanswered_uemergencyservices",
+          "IsExportable": false
+        },
+        {
+          "PublicKey": "72508825-78a7-c107-3f05-f5dc96326739",
+          "Children": [],
+          "ValidationConditions": [],
+          "ColumnName": "72508825-78a7-c107-3f05-f5dc96326739"
+        }
+      ],
+      "HasAnyExportableChild": true,
+      "TableName": "XGeYtfNsAkC9mEoHbaH99g$2",
+      "EnablementTableName": "XGeYtfNsAkC9mEoHbaH99g$2-e",
+      "ValidityTableName": "XGeYtfNsAkC9mEoHbaH99g$2-v",
+      "DoesSupportDataTable": true,
+      "DoesSupportEnablementTable": true,
+      "DoesSupportValidityTable": true,
+      "IsInsideRoster": false,
+      "ColumnName": "uemergencyservices"
+    },
+    {
+      "IsRoster": false,
+      "RosterSizeQuestionId": null,
+      "RosterSizeSource": 0,
+      "IsFixedRoster": false,
+      "FixedRosterTitles": [],
+      "VariableName": "wManagement",
+      "Title": "SECTION 6 - WASTE MANAGEMENT",
+      "RosterTitleQuestionId": null,
+      "PublicKey": "c7b72ca0-5b69-ea33-93b6-fb9c08a77d9e",
+      "Children": [
+        {
+          "PublicKey": "4dd83bfc-0524-2dab-ef15-8d017eaac21b",
+          "Children": [],
+          "ValidationConditions": [],
+          "ColumnName": "4dd83bfc-0524-2dab-ef15-8d017eaac21b"
+        },
+        {
+          "PublicKey": "d91b9bec-aec1-8d6a-478c-011152ca6391",
+          "Children": [],
+          "ValidationConditions": [],
+          "ColumnName": "d91b9bec-aec1-8d6a-478c-011152ca6391"
+        },
+        {
+          "CategoriesId": null,
+          "QuestionType": 0,
+          "Featured": false,
+          "VariableName": "q6_01",
+          "VariableLabel": "",
+          "QuestionText": "6.01. What type of toilet facilities are available to your guest at this facility?",
+          "Answers": [
+            {
+              "AnswerText": "1. Flushed to public piped sewer system",
+              "AnswerValue": "1"
+            },
+            {
+              "AnswerText": "2. Flushed to private septic tank",
+              "AnswerValue": "2"
+            },
+            {
+              "AnswerText": "3. Flushed to pit",
+              "AnswerValue": "3"
+            },
+            {
+              "AnswerText": "4. Pit latrine",
+              "AnswerValue": "4"
+            },
+            {
+              "AnswerText": "5. Other (specify)",
+              "AnswerValue": "5"
+            },
+            {
+              "AnswerText": "6. None",
+              "AnswerValue": "6"
+            }
+          ],
+          "LinkedToQuestionId": null,
+          "LinkedToRosterId": null,
+          "PublicKey": "d56760be-a6fe-f1fb-57c6-9b34aa0f1331",
+          "Children": [],
+          "ValidationConditions": [],
+          "Instructions": "READ OPTIONS",
+          "ColumnName": "q6_01"
+        },
+        {
+          "QuestionType": 7,
+          "Featured": false,
+          "VariableName": "q6_01S",
+          "VariableLabel": "",
+          "QuestionText": "6.01S. Please specify other",
+          "Answers": [],
+          "LinkedToQuestionId": null,
+          "LinkedToRosterId": null,
+          "PublicKey": "48ac1bf6-654b-b266-99e0-d9f4ddd4b406",
+          "Children": [],
+          "ValidationConditions": [],
+          "Instructions": "",
+          "ColumnName": "q6_01s"
+        },
+        {
+          "CategoriesId": null,
+          "QuestionType": 0,
+          "Featured": false,
+          "VariableName": "q6_02",
+          "VariableLabel": "",
+          "QuestionText": "6.02. Is there a public sewage treatment in this area?",
+          "Answers": [
+            {
+              "AnswerText": "Yes",
+              "AnswerValue": "1"
+            },
+            {
+              "AnswerText": "No",
+              "AnswerValue": "2"
+            },
+            {
+              "AnswerText": "Don't Know",
+              "AnswerValue": "9"
+            }
+          ],
+          "LinkedToQuestionId": null,
+          "LinkedToRosterId": null,
+          "PublicKey": "868f773f-0604-e7ca-06b8-c34ac6530e68",
+          "Children": [],
+          "ValidationConditions": [],
+          "Instructions": "",
+          "ColumnName": "q6_02"
+        },
+        {
+          "CategoriesId": null,
+          "QuestionType": 0,
+          "Featured": false,
+          "VariableName": "q6_03",
+          "VariableLabel": "",
+          "QuestionText": "6.03. Can this public treatment system handle the demand from additional tourist facilities in Negril?",
+          "Answers": [
+            {
+              "AnswerText": "Yes",
+              "AnswerValue": "1"
+            },
+            {
+              "AnswerText": "No",
+              "AnswerValue": "2"
+            },
+            {
+              "AnswerText": "Don't Know",
+              "AnswerValue": "9"
+            }
+          ],
+          "LinkedToQuestionId": null,
+          "LinkedToRosterId": null,
+          "PublicKey": "f1546779-0fe6-af3d-8f2f-a580ad104fe6",
+          "Children": [],
+          "ValidationConditions": [],
+          "Instructions": "",
+          "ColumnName": "q6_03"
+        },
+        {
+          "CategoriesId": null,
+          "QuestionType": 0,
+          "Featured": false,
+          "VariableName": "q6_04",
+          "VariableLabel": "",
+          "QuestionText": "6.04. Is the sewage treated in an environmentally safe manner?",
+          "Answers": [
+            {
+              "AnswerText": "Yes",
+              "AnswerValue": "1"
+            },
+            {
+              "AnswerText": "No",
+              "AnswerValue": "2"
+            },
+            {
+              "AnswerText": "Don't Know",
+              "AnswerValue": "9"
+            }
+          ],
+          "LinkedToQuestionId": null,
+          "LinkedToRosterId": null,
+          "PublicKey": "56d966d7-93d8-aca8-c7e9-31189cba2335",
+          "Children": [],
+          "ValidationConditions": [],
+          "Instructions": "",
+          "ColumnName": "q6_04"
+        },
+        {
+          "CategoriesId": null,
+          "QuestionType": 0,
+          "Featured": false,
+          "VariableName": "q6_05",
+          "VariableLabel": "",
+          "QuestionText": "6.05. How does this facility mainly dispose of solid waste (garbage)?",
+          "Answers": [
+            {
+              "AnswerText": "1. Regular Public Collection System",
+              "AnswerValue": "1"
+            },
+            {
+              "AnswerText": "2. Irregular Public Collection System",
+              "AnswerValue": "2"
+            },
+            {
+              "AnswerText": "3. Private Collection System",
+              "AnswerValue": "3"
+            },
+            {
+              "AnswerText": "4. Burn",
+              "AnswerValue": "4"
+            },
+            {
+              "AnswerText": "5. Bury",
+              "AnswerValue": "5"
+            },
+            {
+              "AnswerText": "6. Dumping in Sea/River/Pond/Gully",
+              "AnswerValue": "6"
+            },
+            {
+              "AnswerText": "7. Dumping in Own Yard",
+              "AnswerValue": "7"
+            },
+            {
+              "AnswerText": "8. Dumping at Municipal Site",
+              "AnswerValue": "8"
+            },
+            {
+              "AnswerText": "9. Other Dumping",
+              "AnswerValue": "9"
+            },
+            {
+              "AnswerText": "10. Other Method of Garbage Disposal",
+              "AnswerValue": "10"
+            }
+          ],
+          "LinkedToQuestionId": null,
+          "LinkedToRosterId": null,
+          "PublicKey": "7bd30ddd-18f3-00c7-6c02-03335d156287",
+          "Children": [],
+          "ValidationConditions": [],
+          "Instructions": "READ OPTIONS",
+          "ColumnName": "q6_05"
+        },
+        {
+          "QuestionType": 7,
+          "Featured": false,
+          "VariableName": "q6_05S",
+          "VariableLabel": "",
+          "QuestionText": "6.05S. Please specify other",
+          "Answers": [],
+          "LinkedToQuestionId": null,
+          "LinkedToRosterId": null,
+          "PublicKey": "2bfa3607-ad30-6b88-0a8e-9444e551cf35",
+          "Children": [],
+          "ValidationConditions": [],
+          "Instructions": "",
+          "ColumnName": "q6_05s"
+        },
+        {
+          "PublicKey": "96e07a21-168d-7a55-0981-82d76cef0647",
+          "Children": [],
+          "Type": 1,
+          "Name": "unanswered_wManagement",
+          "Label": "",
+          "Expression": "NumberUnansweredQuestions(wManagement)",
+          "DoNotExport": true,
+          "ColumnName": "unanswered_wmanagement",
+          "IsExportable": false
+        },
+        {
+          "PublicKey": "232dad98-2c76-e01f-1426-aad45fafc71c",
+          "Children": [],
+          "ValidationConditions": [],
+          "ColumnName": "232dad98-2c76-e01f-1426-aad45fafc71c"
+        }
+      ],
+      "HasAnyExportableChild": true,
+      "TableName": "XGeYtfNsAkC9mEoHbaH99g$2",
+      "EnablementTableName": "XGeYtfNsAkC9mEoHbaH99g$2-e",
+      "ValidityTableName": "XGeYtfNsAkC9mEoHbaH99g$2-v",
+      "DoesSupportDataTable": true,
+      "DoesSupportEnablementTable": true,
+      "DoesSupportValidityTable": true,
+      "IsInsideRoster": false,
+      "ColumnName": "wmanagement"
+    },
+    {
+      "IsRoster": false,
+      "RosterSizeQuestionId": null,
+      "RosterSizeSource": 0,
+      "IsFixedRoster": false,
+      "FixedRosterTitles": [],
+      "VariableName": "demoCharacteristics",
+      "Title": "SECTION 7- DEMOGRAPHIC CHARACTERISTICS",
+      "RosterTitleQuestionId": null,
+      "PublicKey": "8d5be0f2-68bc-31e3-450d-4612c3fe16f5",
+      "Children": [
+        {
+          "PublicKey": "a5654b62-772c-4d3a-9277-9bda74f5cb73",
+          "Children": [],
+          "ValidationConditions": [],
+          "ColumnName": "a5654b62-772c-4d3a-9277-9bda74f5cb73"
+        },
+        {
+          "PublicKey": "29d0b443-3b9d-50aa-b1e4-97a221681fb9",
+          "Children": [],
+          "ValidationConditions": [],
+          "ColumnName": "29d0b443-3b9d-50aa-b1e4-97a221681fb9"
+        },
+        {
+          "CategoriesId": null,
+          "QuestionType": 0,
+          "Featured": false,
+          "VariableName": "q7_01",
+          "VariableLabel": "",
+          "QuestionText": "7.01. Respondent sex?",
+          "Answers": [
+            {
+              "AnswerText": "Male",
+              "AnswerValue": "1"
+            },
+            {
+              "AnswerText": "Female",
+              "AnswerValue": "2"
+            }
+          ],
+          "LinkedToQuestionId": null,
+          "LinkedToRosterId": null,
+          "PublicKey": "492cd08f-270d-75fa-c63c-b9798729c536",
+          "Children": [],
+          "ValidationConditions": [],
+          "Instructions": "",
+          "ColumnName": "q7_01"
+        },
+        {
+          "IsInteger": true,
+          "QuestionType": 4,
+          "Featured": false,
+          "VariableName": "q7_02",
+          "VariableLabel": "",
+          "QuestionText": "7.02. How old were you on your last birthday?",
+          "Answers": [
+            {
+              "AnswerText": "Respondent reluctant to give their age",
+              "AnswerValue": "99"
+            }
+          ],
+          "LinkedToQuestionId": null,
+          "LinkedToRosterId": null,
+          "PublicKey": "f27f6dd6-1a26-3d49-9df4-a7892b49489f",
+          "Children": [],
+          "ValidationConditions": [],
+          "Instructions": "",
+          "ColumnName": "q7_02"
+        },
+        {
+          "CategoriesId": null,
+          "QuestionType": 0,
+          "Featured": false,
+          "VariableName": "q7_02a",
+          "VariableLabel": "",
+          "QuestionText": "7.02a.  Please give me the age range in which you fall?",
+          "Answers": [
+            {
+              "AnswerText": "18 - 24  years",
+              "AnswerValue": "1"
+            },
+            {
+              "AnswerText": "25 - 44 years",
+              "AnswerValue": "2"
+            },
+            {
+              "AnswerText": "45 - 64 years",
+              "AnswerValue": "3"
+            },
+            {
+              "AnswerText": "65 years",
+              "AnswerValue": "4"
+            }
+          ],
+          "LinkedToQuestionId": null,
+          "LinkedToRosterId": null,
+          "PublicKey": "aa081417-2556-e31d-75f6-afdccba3c722",
+          "Children": [],
+          "ValidationConditions": [],
+          "Instructions": "",
+          "ColumnName": "q7_02a"
+        },
+        {
+          "CategoriesId": null,
+          "QuestionType": 0,
+          "Featured": false,
+          "VariableName": "q7_03",
+          "VariableLabel": "",
+          "QuestionText": "7.03. What is your marital status?",
+          "Answers": [
+            {
+              "AnswerText": "1. Married",
+              "AnswerValue": "1"
+            },
+            {
+              "AnswerText": "2. Common-law",
+              "AnswerValue": "2"
+            },
+            {
+              "AnswerText": "3. Single",
+              "AnswerValue": "3"
+            },
+            {
+              "AnswerText": "4. Divorce/Separated",
+              "AnswerValue": "4"
+            },
+            {
+              "AnswerText": "5. Other (specify)",
+              "AnswerValue": "5"
+            }
+          ],
+          "LinkedToQuestionId": null,
+          "LinkedToRosterId": null,
+          "PublicKey": "98b5c800-2023-aa61-b0b7-07b0738b4577",
+          "Children": [],
+          "ValidationConditions": [],
+          "Instructions": "",
+          "ColumnName": "q7_03"
+        },
+        {
+          "QuestionType": 7,
+          "Featured": false,
+          "VariableName": "q7_03S",
+          "VariableLabel": "",
+          "QuestionText": "7.03S. Please state other specify",
+          "Answers": [],
+          "LinkedToQuestionId": null,
+          "LinkedToRosterId": null,
+          "PublicKey": "bb08812b-1e07-e853-b269-57c399906117",
+          "Children": [],
+          "ValidationConditions": [],
+          "Instructions": "",
+          "ColumnName": "q7_03s"
+        },
+        {
+          "CategoriesId": null,
+          "QuestionType": 0,
+          "Featured": false,
+          "VariableName": "q7_04",
+          "VariableLabel": "",
+          "QuestionText": "7.04. What is the highest level of education that you have attained?",
+          "Answers": [
+            {
+              "AnswerText": "1. Primary",
+              "AnswerValue": "1"
+            },
+            {
+              "AnswerText": "2. Secondary",
+              "AnswerValue": "2"
+            },
+            {
+              "AnswerText": "3. Tertiary",
+              "AnswerValue": "3"
+            },
+            {
+              "AnswerText": "4. University",
+              "AnswerValue": "4"
+            },
+            {
+              "AnswerText": "5. Vocational",
+              "AnswerValue": "5"
+            },
+            {
+              "AnswerText": "6. No formal education/schooling",
+              "AnswerValue": "6"
+            }
+          ],
+          "LinkedToQuestionId": null,
+          "LinkedToRosterId": null,
+          "PublicKey": "23adf388-2721-4fd0-33de-3aea5c5c89f9",
+          "Children": [],
+          "ValidationConditions": [],
+          "Instructions": "",
+          "ColumnName": "q7_04"
+        },
+        {
+          "CategoriesId": null,
+          "QuestionType": 0,
+          "Featured": false,
+          "VariableName": "q7_05",
+          "VariableLabel": "",
+          "QuestionText": "7.05. Besides formal education have you received training in any trade or skill?",
+          "Answers": [
+            {
+              "AnswerText": "Yes",
+              "AnswerValue": "1"
+            },
+            {
+              "AnswerText": "No",
+              "AnswerValue": "2"
+            }
+          ],
+          "LinkedToQuestionId": null,
+          "LinkedToRosterId": null,
+          "PublicKey": "692f988a-6845-d88a-0e4f-d97f6d5084f9",
+          "Children": [],
+          "ValidationConditions": [],
+          "Instructions": "",
+          "ColumnName": "q7_05"
+        },
+        {
+          "QuestionType": 7,
+          "Featured": false,
+          "VariableName": "q7_06",
+          "VariableLabel": "",
+          "QuestionText": "7.06. What training have you received?",
+          "Answers": [],
+          "LinkedToQuestionId": null,
+          "LinkedToRosterId": null,
+          "PublicKey": "7a601a49-555d-124c-9ecc-8ec4e7f97ef1",
+          "Children": [],
+          "ValidationConditions": [],
+          "Instructions": "",
+          "ColumnName": "q7_06"
+        },
+        {
+          "PublicKey": "eaffef82-6993-837f-de0c-81bbf7ed974e",
+          "Children": [],
+          "Type": 1,
+          "Name": "unanswered_demoCharacteristics",
+          "Label": "",
+          "Expression": "NumberUnansweredQuestions(demoCharacteristics)",
+          "DoNotExport": true,
+          "ColumnName": "unanswered_democharacteristics",
+          "IsExportable": false
+        },
+        {
+          "PublicKey": "d1ec950e-a6cc-1393-92c4-ab5a85f73008",
+          "Children": [],
+          "ValidationConditions": [],
+          "ColumnName": "d1ec950e-a6cc-1393-92c4-ab5a85f73008"
+        }
+      ],
+      "HasAnyExportableChild": true,
+      "TableName": "XGeYtfNsAkC9mEoHbaH99g$2",
+      "EnablementTableName": "XGeYtfNsAkC9mEoHbaH99g$2-e",
+      "ValidityTableName": "XGeYtfNsAkC9mEoHbaH99g$2-v",
+      "DoesSupportDataTable": true,
+      "DoesSupportEnablementTable": true,
+      "DoesSupportValidityTable": true,
+      "IsInsideRoster": false,
+      "ColumnName": "democharacteristics"
+    },
+    {
+      "IsRoster": false,
+      "RosterSizeQuestionId": null,
+      "RosterSizeSource": 0,
+      "IsFixedRoster": false,
+      "FixedRosterTitles": [],
+      "VariableName": "",
+      "Title": "SECTION RESULTS",
+      "RosterTitleQuestionId": null,
+      "PublicKey": "3644740f-38fe-d435-4b87-844e4d962b74",
+      "Children": [
+        {
+          "PublicKey": "03d5e002-6382-476c-ba67-e76d7e566177",
+          "Children": [],
+          "ValidationConditions": [],
+          "ColumnName": "03d5e002-6382-476c-ba67-e76d7e566177"
+        },
+        {
+          "PublicKey": "0a8341f7-cca5-5d4b-5d3d-400ce90def63",
+          "Children": [],
+          "ValidationConditions": [],
+          "ColumnName": "0a8341f7-cca5-5d4b-5d3d-400ce90def63"
+        },
+        {
+          "PublicKey": "ce870bc1-4b5d-4313-91d8-eed306bd925f",
+          "Children": [],
+          "ValidationConditions": [],
+          "ColumnName": "ce870bc1-4b5d-4313-91d8-eed306bd925f"
+        },
+        {
+          "PublicKey": "480c8a09-1bdd-46c3-94cc-6112480f6d59",
+          "Children": [],
+          "ValidationConditions": [],
+          "ColumnName": "480c8a09-1bdd-46c3-94cc-6112480f6d59"
+        },
+        {
+          "PublicKey": "6643007f-7b07-43bd-be4c-e0b6548a1c7d",
+          "Children": [],
+          "ValidationConditions": [],
+          "ColumnName": "6643007f-7b07-43bd-be4c-e0b6548a1c7d"
+        },
+        {
+          "PublicKey": "08a0b123-e794-49ff-9902-e803a231115a",
+          "Children": [],
+          "ValidationConditions": [],
+          "ColumnName": "08a0b123-e794-49ff-9902-e803a231115a"
+        },
+        {
+          "PublicKey": "35b7ddb0-45fb-440b-9c1c-05ecd88ea960",
+          "Children": [],
+          "ValidationConditions": [],
+          "ColumnName": "35b7ddb0-45fb-440b-9c1c-05ecd88ea960"
+        },
+        {
+          "IsRoster": true,
+          "RosterSizeQuestionId": "33572ed7-9d38-1604-7256-ff1593ee9419",
+          "RosterSizeSource": 0,
+          "IsFixedRoster": false,
+          "FixedRosterTitles": [],
+          "VariableName": "roster_result",
+          "Title": "%visit_endTitle% VISIT RESULT #",
+          "RosterTitleQuestionId": null,
+          "PublicKey": "b8d4d4b7-bc54-4e18-9d91-394f0e7f6e93",
+          "Children": [
+            {
+              "CategoriesId": null,
+              "QuestionType": 0,
+              "Featured": false,
+              "VariableName": "int_resultcode",
+              "VariableLabel": "Result Code",
+              "QuestionText": "INTERVIEWER: What was the result of the visit?",
+              "Answers": [
+                {
+                  "AnswerText": "01 - Completed Interview",
+                  "AnswerValue": "1"
+                },
+                {
+                  "AnswerText": "02 - Partly Completed Interview",
+                  "AnswerValue": "2"
+                },
+                {
+                  "AnswerText": "03 - Refusal",
+                  "AnswerValue": "3"
+                },
+                {
+                  "AnswerText": "04 - Closed",
+                  "AnswerValue": "4"
+                },
+                {
+                  "AnswerText": "99- Other (specify)",
+                  "AnswerValue": "99"
+                }
+              ],
+              "LinkedToQuestionId": null,
+              "LinkedToRosterId": null,
+              "PublicKey": "49e5d5fa-a575-4e70-b4bf-2180e700bb89",
+              "Children": [],
+              "ValidationConditions": [],
+              "Instructions": "Select interview result from the list below.",
+              "ColumnName": "int_resultcode"
+            },
+            {
+              "PublicKey": "dbd6e4fa-7835-4093-8990-ca47d1a959d7",
+              "Children": [],
+              "Type": 5,
+              "Name": "visit_endTitle",
+              "Label": "Calculated visit title to be displayed on the button.",
+              "Expression": "IsAnswered(end_time) ? end_time.ToString() : \" \"",
+              "DoNotExport": false,
+              "ColumnName": "visit_endtitle",
+              "IsExportable": true
+            },
+            {
+              "QuestionType": 7,
+              "Featured": false,
+              "VariableName": "result_other",
+              "VariableLabel": "Other (specify)",
+              "QuestionText": "Please state other reason:",
+              "Answers": [],
+              "LinkedToQuestionId": null,
+              "LinkedToRosterId": null,
+              "PublicKey": "28abef32-9bf5-4018-a1ba-f641782f719c",
+              "Children": [],
+              "ValidationConditions": [],
+              "Instructions": "",
+              "ColumnName": "result_other"
+            },
+            {
+              "IsTimestamp": true,
+              "QuestionType": 5,
+              "Featured": false,
+              "VariableName": "end_time",
+              "VariableLabel": "Visit End Time",
+              "QuestionText": "INTERVIEWER: Record end time of the visit!",
+              "Answers": [],
+              "LinkedToQuestionId": null,
+              "LinkedToRosterId": null,
+              "PublicKey": "4c30b0cb-a704-414d-845c-fd8fdf5250ab",
+              "Children": [],
+              "ValidationConditions": [],
+              "Instructions": "Click on the Button",
+              "ColumnName": "end_time"
+            }
+          ],
+          "HasAnyExportableChild": true,
+          "TableName": "XGeYtfNsAkC9mEoHbaH99g$2_roster_result",
+          "EnablementTableName": "XGeYtfNsAkC9mEoHbaH99g$2_roster_result-e",
+          "ValidityTableName": "XGeYtfNsAkC9mEoHbaH99g$2_roster_result-v",
+          "DoesSupportDataTable": true,
+          "DoesSupportEnablementTable": true,
+          "DoesSupportValidityTable": true,
+          "IsInsideRoster": true,
+          "ColumnName": "roster_result"
+        },
+        {
+          "CategoriesId": null,
+          "QuestionType": 0,
+          "Featured": false,
+          "VariableName": "Final_result",
+          "VariableLabel": "",
+          "QuestionText": "Final Result Code",
+          "Answers": [
+            {
+              "AnswerText": "01.\tCompleted interview",
+              "AnswerValue": "1"
+            },
+            {
+              "AnswerText": "02.\tPartially completed interview",
+              "AnswerValue": "2"
+            },
+            {
+              "AnswerText": "03.\tNon-contact",
+              "AnswerValue": "3"
+            },
+            {
+              "AnswerText": "04.   Closed",
+              "AnswerValue": "4"
+            },
+            {
+              "AnswerText": "98.\tRefused",
+              "AnswerValue": "98"
+            }
+          ],
+          "LinkedToQuestionId": null,
+          "LinkedToRosterId": null,
+          "PublicKey": "68912ac7-0eb7-47ad-8b22-c3e5ab9000be",
+          "Children": [],
+          "ValidationConditions": [],
+          "Instructions": "Select interview result from the list below.",
+          "ColumnName": "final_result"
+        },
+        {
+          "CategoriesId": null,
+          "QuestionType": 0,
+          "Featured": false,
+          "VariableName": "sup_check",
+          "VariableLabel": "",
+          "QuestionText": "SUPERVISOR CHECK: Do you confirm that the interview is completed and correct?",
+          "Answers": [
+            {
+              "AnswerText": "Yes, I confirm that this interview is completed and correct",
+              "AnswerValue": "1"
+            },
+            {
+              "AnswerText": "No,  the interview is rejected",
+              "AnswerValue": "2"
+            }
+          ],
+          "LinkedToQuestionId": null,
+          "LinkedToRosterId": null,
+          "PublicKey": "275a0b56-7a7c-42a2-b509-e0f4905f1994",
+          "Children": [],
+          "ValidationConditions": [],
+          "Instructions": "",
+          "ColumnName": "sup_check"
+        }
+      ],
+      "HasAnyExportableChild": true,
+      "TableName": "XGeYtfNsAkC9mEoHbaH99g$2",
+      "EnablementTableName": "XGeYtfNsAkC9mEoHbaH99g$2-e",
+      "ValidityTableName": "XGeYtfNsAkC9mEoHbaH99g$2-v",
+      "DoesSupportDataTable": true,
+      "DoesSupportEnablementTable": true,
+      "DoesSupportValidityTable": true,
+      "IsInsideRoster": false,
+      "ColumnName": "3644740f-38fe-d435-4b87-844e4d962b74"
+    }
+  ],
+  "HasAnyExportableChild": true,
+  "TableName": "XGeYtfNsAkC9mEoHbaH99g$2",
+  "EnablementTableName": "XGeYtfNsAkC9mEoHbaH99g$2-e",
+  "ValidityTableName": "XGeYtfNsAkC9mEoHbaH99g$2-v",
+  "DoesSupportDataTable": false,
+  "DoesSupportEnablementTable": false,
+  "DoesSupportValidityTable": false,
+  "IsInsideRoster": false,
+  "ColumnName": "accommodation_attractions_ac"
+}
